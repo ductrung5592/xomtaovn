@@ -5,3 +5,10 @@ node_modules/
 Thumbs.db
 src/public/css/styles.css
 npm-debug.log*
+
+# Ảnh gốc kiểm kho — chỉ lưu local, không đẩy lên repo (đã có bản copy trong src/public/uploads)
+Kiểm kho hàng ngày/*
+!Kiểm kho hàng ngày/.gitkeep
+!Kiểm kho hàng ngày/đã xử lý/
+Kiểm kho hàng ngày/đã xử lý/*
+!Kiểm kho hàng ngày/đã xử lý/.gitkeep

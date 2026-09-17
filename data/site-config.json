@@ -4,17 +4,17 @@
   "slogan": "Xóm Táo chỉ bán máy zin, bạn có thể kiểm tra với tất cả các thợ. Nếu không zin, chúng tôi tặng máy và bồi thường bạn 10 triệu.",
   "contact": {
     "zalo": {
-      "phone": "090xxxxxxx",
-      "url": "https://zalo.me/090xxxxxxx",
-      "placeholder": true
+      "phone": "0876545888",
+      "url": "https://zalo.me/0876545888",
+      "placeholder": false
     },
     "messenger": {
       "url": "https://m.me/xomtao.placeholder",
       "placeholder": true
     },
     "hotline": {
-      "phone": "090xxxxxxx",
-      "placeholder": true
+      "phone": "0876545888",
+      "placeholder": false
     }
   },
   "address": "Đang cập nhật địa chỉ cửa hàng",

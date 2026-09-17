@@ -1,4 +1,5 @@
 [
+  { "slug": "iphone-17", "label": "iPhone 17", "match": ["iPhone 17"] },
   { "slug": "iphone-16", "label": "iPhone 16", "match": ["iPhone 16"] },
   { "slug": "iphone-15", "label": "iPhone 15", "match": ["iPhone 15"] },
   { "slug": "iphone-14", "label": "iPhone 14", "match": ["iPhone 14"] },
