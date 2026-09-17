@@ -1,0 +1,31 @@
+{
+  "shopName": "Xóm Táo",
+  "tagline": "iPhone chính hãng zin 100% — kiểm tra thoải mái trước khi mua",
+  "slogan": "Xóm Táo chỉ bán máy zin, bạn có thể kiểm tra với tất cả các thợ. Nếu không zin, chúng tôi tặng máy và bồi thường bạn 10 triệu.",
+  "contact": {
+    "zalo": {
+      "phone": "090xxxxxxx",
+      "url": "https://zalo.me/090xxxxxxx",
+      "placeholder": true
+    },
+    "messenger": {
+      "url": "https://m.me/xomtao.placeholder",
+      "placeholder": true
+    },
+    "hotline": {
+      "phone": "090xxxxxxx",
+      "placeholder": true
+    }
+  },
+  "address": "Đang cập nhật địa chỉ cửa hàng",
+  "openingHours": "Đang cập nhật giờ mở cửa",
+  "about": {
+    "founded": "Đang cập nhật",
+    "story": "Đang cập nhật nội dung giới thiệu về Xóm Táo — hành trình hình thành, lý do đội ngũ theo đuổi tiêu chuẩn máy zin 100%.",
+    "commitments": [
+      "Chỉ bán máy zin 100%, kiểm tra thoải mái cùng thợ độc lập trước khi mua",
+      "Nếu phát hiện máy không zin, tặng máy và đền bù 10.000.000đ",
+      "Đang cập nhật thêm các cam kết khác"
+    ]
+  }
+}

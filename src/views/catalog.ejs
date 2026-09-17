@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<%- include("partials/head") %>
+</head>
+<body>
+<%- include("partials/header") %>
+
+<main>
+  <% if (isDemoView) { %>
+    <div class="bg-gold-500/15 text-gold-700 text-center text-sm font-medium py-2 px-4">
+      Chế độ xem trước (dữ liệu minh hoạ) — chỉ hiển thị khi chạy ở môi trường phát triển.
+    </div>
+  <% } %>
+
+  <section class="bg-charcoal-950 text-cream-50 py-10 sm:py-14">
+    <div class="container-max px-4 sm:px-6 lg:px-10">
+      <h1 class="font-display text-2xl sm:text-3xl font-extrabold">Sản phẩm</h1>
+      <p class="mt-2 text-cream-50/60 text-sm sm:text-base">Toàn bộ máy đều được kiểm tra zin 100% trước khi lên kệ.</p>
+    </div>
+  </section>
+
+  <section class="section-pad bg-cream-50">
+    <div class="container-max grid lg:grid-cols-[240px_1fr] gap-8">
+      <aside>
+        <form method="GET" class="card p-5 space-y-5">
+          <div>
+            <label for="line" class="block text-xs font-semibold uppercase tracking-wide text-charcoal-500">Dòng máy</label>
+            <select id="line" name="line" class="mt-1.5 w-full rounded-lg border border-charcoal-900/15 py-2.5 px-3 text-sm min-h-[44px]">
+              <option value="">Tất cả</option>
+              <% categories.forEach(function(cat) { %>
+                <option value="<%= cat.match[0] %>" <%= filters.line === cat.match[0] ? "selected" : "" %>><%= cat.label %></option>
+              <% }); %>
+            </select>
+          </div>
+
+          <% if (filterOptions.storages.length > 0) { %>
+          <div>
+            <label for="storage" class="block text-xs font-semibold uppercase tracking-wide text-charcoal-500">Dung lượng</label>
+            <select id="storage" name="storage" class="mt-1.5 w-full rounded-lg border border-charcoal-900/15 py-2.5 px-3 text-sm min-h-[44px]">
+              <option value="">Tất cả</option>
+              <% filterOptions.storages.forEach(function(gb) { %>
+                <option value="<%= gb %>" <%= String(filters.storage) === String(gb) ? "selected" : "" %>><%= gb %>GB</option>
+              <% }); %>
+            </select>
+          </div>
+          <% } %>
+
+          <% if (filterOptions.conditions.length > 0) { %>
+          <div>
+            <label for="condition" class="block text-xs font-semibold uppercase tracking-wide text-charcoal-500">Tình trạng</label>
+            <select id="condition" name="condition" class="mt-1.5 w-full rounded-lg border border-charcoal-900/15 py-2.5 px-3 text-sm min-h-[44px]">
+              <option value="">Tất cả</option>
+              <% filterOptions.conditions.forEach(function(c) { %>
+                <option value="<%= c %>" <%= filters.condition === c ? "selected" : "" %>><%= c %></option>
+              <% }); %>
+            </select>
+          </div>
+          <% } %>
+
+          <div>
+            <label for="maxPrice" class="block text-xs font-semibold uppercase tracking-wide text-charcoal-500">Giá tối đa (VNĐ)</label>
+            <input
+              id="maxPrice" name="maxPrice" type="number" min="0" step="500000"
+              value="<%= filters.maxPrice || '' %>"
+              placeholder="Vd: 15000000"
+              class="mt-1.5 w-full rounded-lg border border-charcoal-900/15 py-2.5 px-3 text-sm min-h-[44px]"
+            />
+          </div>
+
+          <button type="submit" class="btn-dark w-full">Lọc sản phẩm</button>
+          <% if (filters.line || filters.storage || filters.condition || filters.maxPrice) { %>
+            <a href="<%= isDemoView ? '/preview-demo' : '/san-pham' %>" class="block text-center text-xs text-charcoal-500 underline">Xoá bộ lọc</a>
+          <% } %>
+        </form>
+      </aside>
+
+      <div>
+        <% if (products.length === 0) { %>
+          <div class="rounded-2xl border border-dashed border-charcoal-900/15 py-20 text-center">
+            <p class="text-charcoal-700 font-medium">Không có sản phẩm phù hợp.</p>
+            <p class="mt-1 text-sm text-charcoal-500">Hàng tồn kho được cập nhật thường xuyên, quay lại sau nhé.</p>
+          </div>
+        <% } else { %>
+          <p class="text-sm text-charcoal-500 mb-4"><%= products.length %> sản phẩm</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
+            <% products.forEach(function(product) { %>
+              <%- include("partials/product-card", { product, formatPriceVND }) %>
+            <% }); %>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
+<%- include("partials/floating-contact") %>
+<%- include("partials/scripts") %>
+</body>
+</html>

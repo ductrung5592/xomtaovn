@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<%- include("partials/head", { pageTitle: "Không tìm thấy trang" }) %>
+</head>
+<body>
+<%- include("partials/header") %>
+
+<main>
+  <section class="section-pad bg-cream-50 min-h-[50vh] flex items-center">
+    <div class="container-max text-center">
+      <p class="font-display text-6xl font-extrabold text-gold-500">404</p>
+      <h1 class="mt-4 font-display text-2xl font-bold text-charcoal-950">Không tìm thấy trang này</h1>
+      <p class="mt-2 text-charcoal-500">Trang bạn tìm có thể đã bị xoá hoặc đường dẫn không đúng.</p>
+      <a href="/" class="btn-gold mt-6 inline-flex">Về trang chủ</a>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
+<%- include("partials/floating-contact") %>
+<%- include("partials/scripts") %>
+</body>
+</html>

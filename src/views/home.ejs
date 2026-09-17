@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<%- include("partials/head") %>
+</head>
+<body>
+<%- include("partials/header") %>
+
+<main>
+  <section class="bg-gradient-to-br from-charcoal-950 via-charcoal-900 to-charcoal-950 text-cream-50 overflow-hidden relative">
+    <div class="container-max section-pad grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="badge bg-gold-500/15 text-gold-400">iPhone chính hãng · Zin 100%</span>
+        <h1 class="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+          Nâng tầm phong cách <span class="text-gold-400">cùng Xóm Táo</span>
+        </h1>
+        <p class="mt-4 text-cream-50/70 max-w-lg text-base sm:text-lg"><%= siteConfig.tagline %>. Đầy đủ các dòng máy, kiểm tra minh bạch trước khi mua.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/san-pham" class="btn-gold">Khám phá sản phẩm</a>
+          <a href="/gioi-thieu" class="btn-outline">Về chúng tôi</a>
+        </div>
+      </div>
+      <div class="relative flex justify-center">
+        <img src="/images/demo/iphone-15-pro-max.svg" alt="Hình ảnh iPhone minh hoạ phong cách Xóm Táo" class="w-56 sm:w-72 lg:w-80 drop-shadow-2xl" width="320" height="400" />
+      </div>
+    </div>
+  </section>
+
+  <%- include("partials/trust-banner") %>
+
+  <section class="section-pad bg-cream-50">
+    <div class="container-max">
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950 text-center">Chọn theo dòng máy</h2>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
+        <% categories.forEach(function(cat) { %>
+        <a href="/san-pham?line=<%= encodeURIComponent(cat.match[0]) %>" class="card flex flex-col items-center justify-center gap-2 py-6 px-2 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-7 w-7 text-gold-600" aria-hidden="true">
+            <rect x="7" y="2" width="10" height="20" rx="2.5" />
+            <line x1="10" y1="19" x2="14" y2="19" />
+          </svg>
+          <span class="text-xs sm:text-sm font-semibold text-charcoal-900"><%= cat.label %></span>
+        </a>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-white">
+    <div class="container-max">
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950">Sản phẩm nổi bật</h2>
+        <a href="/san-pham" class="text-sm font-semibold text-gold-600 hover:text-gold-700">Xem tất cả →</a>
+      </div>
+
+      <% if (featured.length === 0) { %>
+        <div class="mt-8 rounded-2xl border border-dashed border-charcoal-900/15 py-16 text-center">
+          <p class="text-charcoal-700 font-medium">Đang cập nhật hàng tồn kho, quay lại sau nhé.</p>
+          <p class="mt-1 text-sm text-charcoal-500">Hàng mới sẽ được cập nhật thường xuyên.</p>
+          <% if (isDev) { %>
+            <a href="/preview-demo" class="mt-4 inline-block text-xs text-gold-600 underline">[Dev] Xem demo giao diện</a>
+          <% } %>
+        </div>
+      <% } else { %>
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          <% featured.forEach(function(product) { %>
+            <%- include("partials/product-card", { product, formatPriceVND }) %>
+          <% }); %>
+        </div>
+      <% } %>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
+<%- include("partials/floating-contact") %>
+<%- include("partials/scripts") %>
+</body>
+</html>

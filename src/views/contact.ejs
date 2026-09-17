@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<%- include("partials/head") %>
+</head>
+<body>
+<%- include("partials/header") %>
+
+<main>
+  <section class="bg-charcoal-950 text-cream-50 py-14 sm:py-20">
+    <div class="container-max px-4 sm:px-6 lg:px-10 text-center">
+      <span class="badge bg-gold-500/15 text-gold-400 mx-auto">Liên hệ</span>
+      <h1 class="mt-4 font-display text-3xl sm:text-4xl font-extrabold">Đặt mua hoặc tư vấn ngay</h1>
+      <p class="mt-4 text-cream-50/70 max-w-xl mx-auto">Chọn kênh thuận tiện nhất — đội ngũ <%= siteConfig.shopName %> phản hồi nhanh chóng.</p>
+    </div>
+  </section>
+
+  <section class="section-pad bg-cream-50">
+    <div class="container-max grid sm:grid-cols-3 gap-6">
+      <a href="<%= siteConfig.contact.zalo.url %>" target="_blank" rel="noopener noreferrer" class="card p-6 text-center flex flex-col items-center gap-3">
+        <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#0068FF] text-white font-display font-extrabold text-lg" aria-hidden="true">Z</span>
+        <p class="font-semibold text-charcoal-950">Zalo</p>
+        <p class="text-sm text-charcoal-500"><%= siteConfig.contact.zalo.phone %></p>
+      </a>
+      <a href="<%= siteConfig.contact.messenger.url %>" target="_blank" rel="noopener noreferrer" class="card p-6 text-center flex flex-col items-center gap-3">
+        <span class="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#00B2FF] to-[#7B2FF7] text-white" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7"><path fill-rule="evenodd" d="M10 2c-4.42 0-8 3.28-8 7.33 0 2.31 1.17 4.37 3 5.72V18l2.74-1.51c.73.2 1.5.31 2.26.31 4.42 0 8-3.28 8-7.33S14.42 2 10 2zm.99 9.86l-2.04-2.18-3.98 2.18 4.38-4.65 2.09 2.18 3.93-2.18-4.38 4.65z" clip-rule="evenodd" /></svg>
+        </span>
+        <p class="font-semibold text-charcoal-950">Messenger</p>
+        <p class="text-sm text-charcoal-500">Nhắn tin cho fanpage</p>
+      </a>
+      <a href="tel:<%= siteConfig.contact.hotline.phone %>" class="card p-6 text-center flex flex-col items-center gap-3">
+        <span class="flex h-14 w-14 items-center justify-center rounded-full bg-gold-500 text-charcoal-950" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7"><path d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-.483 1.498l-1.11.923c-.078.065-.109.174-.061.267a11.5 11.5 0 005.516 5.516c.093.048.202.017.267-.061l.923-1.11a1.5 1.5 0 011.498-.483l3.223.716A1.5 1.5 0 0118 17.35v1.15a1.5 1.5 0 01-1.5 1.5H15c-8.284 0-15-6.716-15-15v-.5z" /></svg>
+        </span>
+        <p class="font-semibold text-charcoal-950">Hotline</p>
+        <p class="text-sm text-charcoal-500"><%= siteConfig.contact.hotline.phone %></p>
+      </a>
+    </div>
+
+    <div class="container-max mt-10 grid sm:grid-cols-2 gap-6">
+      <div class="card p-6">
+        <h2 class="font-display font-bold text-charcoal-950">Địa chỉ cửa hàng</h2>
+        <p class="mt-2 text-sm text-charcoal-600"><%= siteConfig.address %></p>
+      </div>
+      <div class="card p-6">
+        <h2 class="font-display font-bold text-charcoal-950">Giờ mở cửa</h2>
+        <p class="mt-2 text-sm text-charcoal-600"><%= siteConfig.openingHours %></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
+<%- include("partials/floating-contact") %>
+<%- include("partials/scripts") %>
+</body>
+</html>

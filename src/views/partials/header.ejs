@@ -1,0 +1,77 @@
+<header class="sticky top-0 z-50">
+  <!-- Top trust strip -->
+  <div class="bg-charcoal-950 text-cream-50">
+    <div class="container-max px-4 sm:px-6 lg:px-10 py-2.5 flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-[11px] sm:text-xs">
+      <span class="inline-flex items-center gap-1.5 text-gold-400 font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true"><path fill-rule="evenodd" d="M10 1.75a.75.75 0 01.692.462l1.41 3.393 3.664.293a.75.75 0 01.428 1.317l-2.79 2.39.85 3.575a.75.75 0 01-1.12.814L10 12.011l-3.134 1.983a.75.75 0 01-1.12-.814l.85-3.575-2.79-2.39a.75.75 0 01.428-1.317l3.664-.293 1.41-3.393A.75.75 0 0110 1.75z" clip-rule="evenodd" /></svg>
+        Zin 100% — Sai đền 10 triệu
+      </span>
+      <span class="hidden sm:inline-flex items-center gap-1.5 text-cream-50/70">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 001 5.5V15a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0h4.1a2.5 2.5 0 014.9 0H18a1 1 0 001-1v-3.35a1 1 0 00-.293-.707l-2.65-2.65A1 1 0 0015.35 7H14V5.5A1.5 1.5 0 0012.5 4h-10zM14 8.5h1.35l2.15 2.15V11H14V8.5z" clip-rule="evenodd" /><path d="M6 16.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 16.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+        Giao dịch minh bạch
+      </span>
+      <span class="hidden sm:inline-flex items-center gap-1.5 text-cream-50/70">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true"><path d="M18 10a8 8 0 10-16 0v3a2 2 0 002 2h1v-5H3.05a7 7 0 0113.9 0H15v5h1a2 2 0 002-2v-3z" /><path d="M13 16a1 1 0 01-1 1h-1a2 2 0 01-2-2v-1a2 2 0 012-2h1a1 1 0 011 1v3z" /></svg>
+        Hỗ trợ tận tâm
+      </span>
+      <span class="hidden md:inline-flex items-center gap-1.5 text-cream-50/70">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true"><path fill-rule="evenodd" d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9zM4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" clip-rule="evenodd" /></svg>
+        Kiểm tra tự do cùng thợ
+      </span>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <div class="bg-cream-50/95 backdrop-blur border-b border-charcoal-900/10">
+    <div class="container-max px-4 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between gap-4">
+      <a href="/" class="flex items-center gap-2 shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-7 w-7 sm:h-8 sm:w-8" aria-hidden="true">
+          <path d="M16.5 2c.2 1.2-.3 2.4-1 3.2-.8.9-2 1.6-3.2 1.5-.2-1.1.3-2.4 1-3.1.8-.9 2.1-1.5 3.2-1.6z" fill="#C9A45C"/>
+          <path d="M20.8 8.6c-1-1.2-2.4-1.9-3.7-1.9-1.6 0-2.2.9-4.1.9-1.9 0-2.6-.9-4.2-.9-2.1 0-4.4 1.3-5.5 3.5-2.3 4.3-.6 10.7 1.6 14.2 1.1 1.7 2.4 3.6 4.1 3.5 1.6-.1 2.2-1 4.1-1s2.5.9 4.2.9c1.7 0 2.8-1.6 3.9-3.3 1.2-1.9 1.7-3.7 1.8-3.8-.1 0-3.4-1.3-3.4-5.1 0-3.2 2.6-4.7 2.7-4.8-1.4-2.1-3.6-2.4-4.5-2.2z" fill="#0A0A0C"/>
+        </svg>
+        <span class="font-display text-lg sm:text-xl font-extrabold text-charcoal-950 tracking-tight">Xóm Táo</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Điều hướng chính">
+        <% const navLinks = [ { href: "/", label: "Trang chủ" }, { href: "/san-pham", label: "Sản phẩm" }, { href: "/gioi-thieu", label: "Về chúng tôi" }, { href: "/lien-he", label: "Liên hệ" } ]; %>
+        <% navLinks.forEach(function(link) { %>
+          <a
+            href="<%= link.href %>"
+            class="px-4 py-2.5 rounded-full text-sm font-medium transition-colors <%= currentPath === link.href ? 'text-charcoal-950 bg-gold-500/15' : 'text-charcoal-700 hover:text-charcoal-950 hover:bg-charcoal-900/5' %>"
+            <%= currentPath === link.href ? 'aria-current="page"' : '' %>
+          ><%= link.label %></a>
+        <% }); %>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="hidden md:block">
+          <%- include("comparison-widget", { comparison }) %>
+        </div>
+        <a href="/san-pham" class="btn-gold hidden sm:inline-flex">Xem sản phẩm</a>
+        <button
+          type="button"
+          id="mobileMenuBtn"
+          class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-full hover:bg-charcoal-900/5"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Mở menu điều hướng"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6 text-charcoal-950" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobileMenu" hidden class="lg:hidden border-t border-charcoal-900/10 bg-cream-50 px-4 py-3 space-y-1" aria-label="Điều hướng di động">
+      <a href="/" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Trang chủ</a>
+      <a href="/san-pham" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/san-pham' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Sản phẩm</a>
+      <a href="/gioi-thieu" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/gioi-thieu' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Về chúng tôi</a>
+      <a href="/lien-he" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/lien-he' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Liên hệ</a>
+      <div class="pt-2">
+        <%- include("comparison-widget", { comparison }) %>
+      </div>
+    </nav>
+  </div>
+</header>

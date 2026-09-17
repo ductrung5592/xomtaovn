@@ -1,0 +1,10 @@
+[
+  { "slug": "iphone-16", "label": "iPhone 16", "match": ["iPhone 16"] },
+  { "slug": "iphone-15", "label": "iPhone 15", "match": ["iPhone 15"] },
+  { "slug": "iphone-14", "label": "iPhone 14", "match": ["iPhone 14"] },
+  { "slug": "iphone-13", "label": "iPhone 13", "match": ["iPhone 13"] },
+  { "slug": "iphone-12", "label": "iPhone 12", "match": ["iPhone 12"] },
+  { "slug": "iphone-11", "label": "iPhone 11", "match": ["iPhone 11"] },
+  { "slug": "iphone-x-xr-xs", "label": "iPhone X / XR / XS", "match": ["iPhone X", "iPhone XR", "iPhone XS"] },
+  { "slug": "iphone-8-se", "label": "iPhone 8 / SE", "match": ["iPhone 8", "iPhone SE", "iPhone 7"] }
+]

@@ -1,0 +1,21 @@
+{
+  "title": "Vì sao chọn Xóm Táo?",
+  "subtitle": "Bảng so sánh sẽ được chủ shop bổ sung chi tiết — dưới đây là cấu trúc mẫu.",
+  "rows": [
+    {
+      "criteria": "Cam kết máy zin",
+      "xomTao": "Sẽ cập nhật",
+      "otherShops": "Sẽ cập nhật"
+    },
+    {
+      "criteria": "Chính sách bảo hành",
+      "xomTao": "Sẽ cập nhật",
+      "otherShops": "Sẽ cập nhật"
+    },
+    {
+      "criteria": "Kiểm tra cùng thợ độc lập",
+      "xomTao": "Sẽ cập nhật",
+      "otherShops": "Sẽ cập nhật"
+    }
+  ]
+}

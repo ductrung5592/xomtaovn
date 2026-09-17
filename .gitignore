@@ -1,0 +1,7 @@
+node_modules/
+.env
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
+src/public/css/styles.css
+npm-debug.log*

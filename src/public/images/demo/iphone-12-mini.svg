@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ảnh minh hoạ iPhone 12 Mini">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B1B1F"/>
+      <stop offset="100%" stop-color="#0A0A0C"/>
+    </linearGradient>
+    <linearGradient id="phone3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A3A41"/>
+      <stop offset="100%" stop-color="#121214"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg3)"/>
+  <rect x="145" y="90" width="110" height="270" rx="30" fill="url(#phone3)" stroke="#C9A45C" stroke-width="2"/>
+  <rect x="158" y="108" width="84" height="234" rx="16" fill="#0A0A0C"/>
+  <circle cx="200" cy="122" r="3.5" fill="#28282D"/>
+  <text x="200" y="430" text-anchor="middle" font-family="Manrope, sans-serif" font-size="18" fill="#D8B978">iPhone 12 Mini</text>
+  <text x="200" y="458" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#F4EFE6" opacity="0.7">Ảnh minh hoạ giao diện</text>
+</svg>

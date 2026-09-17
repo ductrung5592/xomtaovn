@@ -1,0 +1,62 @@
+[
+  {
+    "id": "demo-1",
+    "slug": "demo-iphone-15-pro-max-256gb",
+    "isDemo": true,
+    "model": "iPhone 15 Pro Max",
+    "line": "iPhone 15",
+    "storageGb": 256,
+    "color": "Titan Tự Nhiên",
+    "batteryHealth": 95,
+    "cosmeticCondition": "Như mới 99%",
+    "price": 28500000,
+    "currency": "VND",
+    "stockStatus": "in_stock",
+    "images": [
+      "/images/demo/iphone-15-pro-max.svg"
+    ],
+    "addedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "notes": "Sản phẩm minh hoạ giao diện — không phải hàng thật đang bán."
+  },
+  {
+    "id": "demo-2",
+    "slug": "demo-iphone-13-128gb",
+    "isDemo": true,
+    "model": "iPhone 13",
+    "line": "iPhone 13",
+    "storageGb": 128,
+    "color": "Xanh Dương",
+    "batteryHealth": 88,
+    "cosmeticCondition": "Tốt 95%",
+    "price": 10500000,
+    "currency": "VND",
+    "stockStatus": "in_stock",
+    "images": [
+      "/images/demo/iphone-13.svg"
+    ],
+    "addedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "notes": "Sản phẩm minh hoạ giao diện — không phải hàng thật đang bán."
+  },
+  {
+    "id": "demo-3",
+    "slug": "demo-iphone-12-mini-64gb",
+    "isDemo": true,
+    "model": "iPhone 12 Mini",
+    "line": "iPhone 12",
+    "storageGb": 64,
+    "color": "Đen",
+    "batteryHealth": 82,
+    "cosmeticCondition": "Khá 90%",
+    "price": 7200000,
+    "currency": "VND",
+    "stockStatus": "sold",
+    "images": [
+      "/images/demo/iphone-12-mini.svg"
+    ],
+    "addedAt": "2026-08-20",
+    "updatedAt": "2026-09-05",
+    "notes": "Sản phẩm minh hoạ giao diện — không phải hàng thật đang bán."
+  }
+]
