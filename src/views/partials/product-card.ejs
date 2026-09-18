@@ -1,28 +1,35 @@
+<%
+  const inStockCount = product.variants.filter(v => v.stockStatus === 'in_stock').length;
+  const storages = [...new Set(product.variants.map(v => v.storageGb))].sort((a, b) => a - b);
+  const priceRange = getPriceRange(product);
+%>
 <a href="/san-pham/<%= product.slug %>" class="card group flex flex-col overflow-hidden">
   <div class="relative aspect-square bg-charcoal-950 overflow-hidden">
     <img
-      src="<%= product.images[0] %>"
-      alt="Ảnh <%= product.model %> <%= product.storageGb %>GB <%= product.color %>"
+      src="<%= product.image %>"
+      alt="Ảnh đại diện <%= product.model %>"
       loading="lazy"
-      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      class="h-full w-full object-contain p-6 transition-transform duration-300 group-hover:scale-105"
       width="400" height="400"
     />
     <% if (product.isDemo) { %>
       <span class="absolute top-3 left-3 badge bg-charcoal-950/80 text-cream-50/90">Ảnh minh hoạ</span>
     <% } %>
-    <span class="absolute top-3 right-3 badge <%= product.stockStatus === 'sold' ? 'bg-charcoal-900/80 text-cream-50/70' : 'bg-gold-500 text-charcoal-950' %>">
-      <%= product.stockStatus === 'sold' ? 'Đã bán' : 'Còn hàng' %>
+    <span class="absolute top-3 right-3 badge <%= inStockCount === 0 ? 'bg-charcoal-900/80 text-cream-50/70' : 'bg-gold-500 text-charcoal-950' %>">
+      <%= inStockCount === 0 ? 'Đã bán hết' : inStockCount + ' máy có sẵn' %>
     </span>
   </div>
   <div class="p-4 flex flex-col gap-2 flex-1">
     <h3 class="font-display font-bold text-charcoal-950 leading-snug"><%= product.model %></h3>
     <div class="flex flex-wrap gap-1.5 text-[11px] text-charcoal-700">
-      <span class="badge bg-charcoal-900/5"><%= product.storageGb %>GB</span>
-      <span class="badge bg-charcoal-900/5">Pin <%= product.batteryHealth %>%</span>
-      <span class="badge bg-charcoal-900/5"><%= product.cosmeticCondition %></span>
+      <% storages.forEach(function(gb) { %>
+        <span class="badge bg-charcoal-900/5"><%= gb %>GB</span>
+      <% }); %>
     </div>
     <div class="mt-auto pt-2 flex flex-col gap-1">
-      <span class="font-display font-extrabold text-gold-600"><%= formatPriceVND(product.price) %></span>
+      <span class="font-display font-extrabold text-gold-600">
+        <%= priceRange.min === priceRange.max ? formatPriceVND(priceRange.min) : 'Từ ' + formatPriceVND(priceRange.min) %>
+      </span>
       <span class="text-xs font-semibold text-charcoal-500 group-hover:text-gold-600">Xem chi tiết →</span>
     </div>
   </div>

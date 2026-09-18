@@ -42,4 +42,19 @@
   .card {
     @apply bg-white rounded-2xl border border-charcoal-900/5 shadow-sm hover:shadow-lg transition-shadow duration-300;
   }
+  .variant-chip {
+    @apply rounded-lg border border-charcoal-900/15 px-4 py-2 text-sm font-semibold text-charcoal-800 min-h-[44px] hover:border-gold-500 transition-colors;
+  }
+  .variant-chip-active {
+    @apply border-gold-500 bg-gold-500/10 text-gold-700;
+  }
+  .unit-chip {
+    @apply flex w-full items-center justify-between gap-3 rounded-lg border border-charcoal-900/15 px-4 py-3 text-sm min-h-[44px] hover:border-gold-500 transition-colors text-left;
+  }
+  .unit-chip-active {
+    @apply border-gold-500 bg-gold-500/10;
+  }
+  .unit-chip-sold {
+    @apply opacity-50 cursor-not-allowed hover:border-charcoal-900/15;
+  }
 }

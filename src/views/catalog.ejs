@@ -85,7 +85,7 @@
           <p class="text-sm text-charcoal-500 mb-4"><%= products.length %> sản phẩm</p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
             <% products.forEach(function(product) { %>
-              <%- include("partials/product-card", { product, formatPriceVND }) %>
+              <%- include("partials/product-card", { product, formatPriceVND, getPriceRange }) %>
             <% }); %>
           </div>
         <% } %>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<%- include("partials/head") %>
+</head>
+<body>
+<%- include("partials/header") %>
+
+<main>
+  <section class="bg-charcoal-950 text-cream-50 py-14 sm:py-20">
+    <div class="container-max px-4 sm:px-6 lg:px-10 text-center">
+      <span class="badge bg-gold-500/15 text-gold-400 mx-auto">Chính sách</span>
+      <h1 class="mt-4 font-display text-3xl sm:text-4xl font-extrabold max-w-2xl mx-auto">Bảo hành &amp; Thu cũ đổi mới</h1>
+      <p class="mt-4 text-cream-50/70 max-w-xl mx-auto">Minh bạch mọi điều khoản trước khi mua — <%= siteConfig.shopName %> cam kết đồng hành cùng bạn sau bán hàng.</p>
+    </div>
+  </section>
+
+  <section class="section-pad bg-cream-50">
+    <div class="container-max max-w-4xl">
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950"><%= policy.warranty.title %></h2>
+      <div class="mt-8 grid sm:grid-cols-2 gap-6">
+        <% policy.warranty.sections.forEach(function(section, i) { %>
+          <div class="card p-6 <%= i === 0 ? 'sm:col-span-2' : '' %>">
+            <h3 class="font-display font-bold text-charcoal-950"><%= section.title %></h3>
+            <ul class="mt-4 space-y-2.5">
+              <% section.items.forEach(function(item) { %>
+                <li class="flex gap-2.5 text-sm text-charcoal-700 leading-relaxed">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 flex-shrink-0 text-gold-500" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 111.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" clip-rule="evenodd" /></svg>
+                  <span><%= item %></span>
+                </li>
+              <% }); %>
+            </ul>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-white">
+    <div class="container-max max-w-4xl">
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950"><%= policy.tradeIn.title %></h2>
+      <p class="mt-1 text-sm text-charcoal-500"><%= policy.tradeIn.subtitle %></p>
+
+      <div class="mt-8 grid sm:grid-cols-2 gap-6">
+        <% policy.tradeIn.sections.forEach(function(section) { %>
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-charcoal-950"><%= section.title %></h3>
+            <ul class="mt-4 space-y-2.5">
+              <% section.items.forEach(function(item) { %>
+                <li class="flex gap-2.5 text-sm text-charcoal-700 leading-relaxed">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 flex-shrink-0 text-gold-500" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 111.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" clip-rule="evenodd" /></svg>
+                  <span><%= item %></span>
+                </li>
+              <% }); %>
+            </ul>
+          </div>
+        <% }); %>
+      </div>
+
+      <div class="mt-6 rounded-2xl bg-charcoal-950/5 border border-charcoal-900/10 p-6">
+        <p class="text-xs font-semibold uppercase tracking-wide text-charcoal-500">Lưu ý</p>
+        <ul class="mt-3 space-y-2">
+          <% policy.tradeIn.notes.forEach(function(note) { %>
+            <li class="text-sm text-charcoal-700 leading-relaxed">• <%= note %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-cream-50">
+    <div class="container-max max-w-4xl text-center">
+      <p class="text-charcoal-700">Còn thắc mắc về chính sách? Liên hệ trực tiếp để được tư vấn.</p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="<%= siteConfig.contact.zalo.url %>" target="_blank" rel="noopener noreferrer" class="btn-gold">Liên hệ Zalo</a>
+        <a href="tel:<%= siteConfig.contact.hotline.phone %>" class="btn-dark">Gọi hotline <%= siteConfig.contact.hotline.phone %></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
+<%- include("partials/floating-contact") %>
+<%- include("partials/scripts") %>
+</body>
+</html>

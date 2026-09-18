@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ảnh đại diện iPhone 8 Plus">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B1B1F"/>
+      <stop offset="100%" stop-color="#0A0A0C"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A3A41"/>
+      <stop offset="100%" stop-color="#121214"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <rect x="130" y="90" width="140" height="320" rx="34" fill="url(#phone)" stroke="#C9A45C" stroke-width="2"/>
+  <rect x="145" y="110" width="110" height="280" rx="18" fill="#0A0A0C"/>
+  <rect x="160" y="122" width="52" height="52" rx="14" fill="#1B1B1F"/>
+  
+      <circle cx="178" cy="108" r="12" fill="#0A0A0C" stroke="#C9A45C" stroke-width="2"/>
+      <circle cx="204" cy="126" r="12" fill="#0A0A0C" stroke="#C9A45C" stroke-width="2"/>
+  <text x="200" y="452" text-anchor="middle" font-family="Manrope, sans-serif" font-size="18" fill="#D8B978">iPhone 8 Plus</text>
+  <text x="200" y="474" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#F4EFE6" opacity="0.6">Ảnh đại diện dòng máy</text>
+</svg>

@@ -1,0 +1,63 @@
+{
+  "warranty": {
+    "title": "Quy định bảo hành",
+    "sections": [
+      {
+        "title": "Hàng mới new seal",
+        "items": ["Bảo hành 12 tháng theo chính sách hãng"]
+      },
+      {
+        "title": "Hàng like new đã qua sử dụng",
+        "items": [
+          "Đổi miễn phí trong 7 ngày, không cần lý do",
+          "Miễn phí ốp lưng + dán cường lực trọn đời máy",
+          "Lỗi 1 đổi 1 trong 30 ngày (sản phẩm tương đương)",
+          "Lỗi 1 đổi 1 trong 12 tháng với lỗi của nhà sản xuất (lỗi main, lỗi sóng, không nghe gọi được)",
+          "Tặng gói bảo hành vàng 6 tháng (nguồn, face, cảm ứng)",
+          "Phần mềm bảo hành trọn đời máy"
+        ]
+      },
+      {
+        "title": "Điều kiện bảo hành",
+        "items": [
+          "Máy không rơi nước",
+          "Máy không rơi vỡ, cấn móp, bẹp góc",
+          "Tem bảo hành còn nguyên vẹn",
+          "Từ chối bảo hành khi màn hình ngấm chất lỏng, vỡ kính, chảy mực, ố vàng, kẻ màn, chết hiển thị",
+          "Từ chối bảo hành khi máy có hiện tượng chập cháy, biến dạng",
+          "Bảo hành 6 tháng, lỗi 1 đổi 1 với phụ kiện cáp, sạc, tai nghe",
+          "Máy đã hết thời gian bảo hành: cửa hàng hỗ trợ sửa chữa, thay thế linh kiện với giá gốc"
+        ]
+      }
+    ]
+  },
+  "tradeIn": {
+    "title": "Chính sách thu cũ đổi mới",
+    "subtitle": "Áp dụng với máy mua tại Xóm Táo",
+    "sections": [
+      {
+        "title": "Nâng cấp đời máy",
+        "items": [
+          "Miễn phí nâng cấp, không mất phí trong 7 ngày đầu",
+          "Trong 30 ngày: trừ 10% giá máy thời điểm hiện tại",
+          "Từ 1 – 3 tháng: trừ 15% giá máy thời điểm hiện tại",
+          "Từ 3 – 6 tháng: trừ 20% giá máy thời điểm hiện tại"
+        ]
+      },
+      {
+        "title": "Bán lại (không nâng cấp đời máy)",
+        "items": [
+          "Trong 7 ngày đầu: trừ 10% giá máy thời điểm hiện tại",
+          "Trong 30 ngày: trừ 15% giá máy thời điểm hiện tại",
+          "Từ 1 – 3 tháng: trừ 25% giá máy thời điểm hiện tại",
+          "Từ 3 – 6 tháng: trừ 35% giá máy thời điểm hiện tại"
+        ]
+      }
+    ],
+    "notes": [
+      "Thu cũ đổi mới áp dụng với khách nâng cấp đời đổi đời máy",
+      "Máy hoạt động tốt, còn nguyên tem của cửa hàng, không cấn móp, xước phảy (máy cấn móp, xước phảy tính phí tuỳ theo hình thức)",
+      "Sản phẩm không mua tại Xóm Táo sẽ được nhập lại theo thoả thuận của hai bên"
+    ]
+  }
+}

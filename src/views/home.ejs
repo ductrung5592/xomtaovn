@@ -12,7 +12,7 @@
       <div>
         <span class="badge bg-gold-500/15 text-gold-400">iPhone chính hãng · Zin 100%</span>
         <h1 class="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
-          Nâng tầm phong cách <span class="text-gold-400">cùng Xóm Táo</span>
+          Uy tín làm nên <span class="text-gold-400">Xóm Táo</span>
         </h1>
         <p class="mt-4 text-cream-50/70 max-w-lg text-base sm:text-lg"><%= siteConfig.tagline %>. Đầy đủ các dòng máy, kiểm tra minh bạch trước khi mua.</p>
         <div class="mt-8 flex flex-wrap gap-3">
@@ -63,7 +63,7 @@
       <% } else { %>
         <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
           <% featured.forEach(function(product) { %>
-            <%- include("partials/product-card", { product, formatPriceVND }) %>
+            <%- include("partials/product-card", { product, formatPriceVND, getPriceRange }) %>
           <% }); %>
         </div>
       <% } %>

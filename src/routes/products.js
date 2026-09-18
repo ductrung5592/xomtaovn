@@ -3,10 +3,11 @@ const router = express.Router();
 const {
   getRealProducts,
   getCategories,
-  getProductBySlug,
+  getProductGroupBySlug,
   filterProducts,
   formatPriceVND,
   getFilterOptions,
+  getPriceRange,
 } = require("../lib/data");
 
 router.get("/", (req, res) => {
@@ -23,19 +24,21 @@ router.get("/", (req, res) => {
     filterOptions,
     filters: { line, storage, condition, maxPrice },
     formatPriceVND,
+    getPriceRange,
     isDemoView: false,
   });
 });
 
 router.get("/:slug", (req, res, next) => {
   const includeDemo = process.env.NODE_ENV !== "production";
-  const product = getProductBySlug(req.params.slug, { includeDemo });
+  const product = getProductGroupBySlug(req.params.slug, { includeDemo });
   if (!product) return next();
 
   res.render("product-detail", {
     pageTitle: product.model,
     product,
     formatPriceVND,
+    getPriceRange,
   });
 });
 

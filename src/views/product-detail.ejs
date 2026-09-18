@@ -17,69 +17,63 @@
         <span class="text-charcoal-800"><%= product.model %></span>
       </nav>
 
-      <div class="grid lg:grid-cols-2 gap-10">
+      <div class="grid lg:grid-cols-2 gap-10" data-variant-selector>
+        <script type="application/json" data-variants-json><%- JSON.stringify(product.variants) %></script>
+
         <div>
           <div class="relative aspect-square rounded-2xl overflow-hidden bg-charcoal-950">
             <img
-              id="mainProductImage"
-              src="<%= product.images[0] %>"
-              alt="Ảnh <%= product.model %> <%= product.storageGb %>GB <%= product.color %>"
-              class="h-full w-full object-cover"
+              src="<%= product.image %>"
+              alt="Ảnh đại diện <%= product.model %>"
+              class="h-full w-full object-contain p-10"
               width="600" height="600"
             />
             <% if (product.isDemo) { %>
               <span class="absolute top-4 left-4 badge bg-charcoal-950/80 text-cream-50/90">Ảnh minh hoạ</span>
             <% } %>
           </div>
-          <% if (product.images.length > 1) { %>
-          <div class="mt-3 flex gap-3" data-gallery-thumbs>
-            <% product.images.forEach(function(src, i) { %>
-              <button
-                type="button"
-                data-src="<%= src %>"
-                class="h-16 w-16 rounded-lg overflow-hidden border-2 <%= i === 0 ? 'border-gold-500' : 'border-transparent' %>"
-                aria-label="Xem ảnh <%= i + 1 %>"
-              >
-                <img src="<%= src %>" alt="" class="h-full w-full object-cover" />
-              </button>
-            <% }); %>
-          </div>
-          <% } %>
         </div>
 
         <div>
-          <span class="badge <%= product.stockStatus === 'sold' ? 'bg-charcoal-900/10 text-charcoal-600' : 'bg-gold-500/15 text-gold-700' %>">
-            <%= product.stockStatus === 'sold' ? 'Đã bán' : 'Còn hàng' %>
-          </span>
+          <span class="badge bg-gold-500/15 text-gold-700" data-stock-badge>Còn hàng</span>
           <h1 class="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950"><%= product.model %></h1>
-          <p class="mt-1 text-charcoal-500"><%= product.color %> · <%= product.storageGb %>GB</p>
+          <p class="mt-1 text-charcoal-500" data-stock-count></p>
 
-          <p class="mt-5 font-display text-3xl font-extrabold text-gold-600"><%= formatPriceVND(product.price) %></p>
+          <p class="mt-5 font-display text-3xl font-extrabold text-gold-600" data-selected-price>—</p>
+
+          <div class="mt-6">
+            <p class="text-xs font-semibold uppercase tracking-wide text-charcoal-500 mb-2">Dung lượng</p>
+            <div class="flex flex-wrap gap-2" data-storage-options></div>
+          </div>
+
+          <div class="mt-5">
+            <p class="text-xs font-semibold uppercase tracking-wide text-charcoal-500 mb-2">Màu sắc</p>
+            <div class="flex flex-wrap gap-2" data-color-options></div>
+          </div>
+
+          <div class="mt-5">
+            <p class="text-xs font-semibold uppercase tracking-wide text-charcoal-500 mb-2">Chọn máy (pin · tình trạng)</p>
+            <div class="flex flex-col gap-2" data-unit-options></div>
+          </div>
 
           <table class="mt-6 w-full text-sm">
             <tbody>
               <tr class="border-t border-charcoal-900/10">
                 <th scope="row" class="py-3 text-left font-medium text-charcoal-500 w-1/3">Dung lượng</th>
-                <td class="py-3 text-charcoal-900"><%= product.storageGb %>GB</td>
+                <td class="py-3 text-charcoal-900" data-spec-storage>—</td>
               </tr>
               <tr class="border-t border-charcoal-900/10">
                 <th scope="row" class="py-3 text-left font-medium text-charcoal-500">Pin</th>
-                <td class="py-3 text-charcoal-900"><%= product.batteryHealth %>%</td>
+                <td class="py-3 text-charcoal-900" data-spec-battery>—</td>
               </tr>
               <tr class="border-t border-charcoal-900/10">
                 <th scope="row" class="py-3 text-left font-medium text-charcoal-500">Tình trạng ngoại hình</th>
-                <td class="py-3 text-charcoal-900"><%= product.cosmeticCondition %></td>
+                <td class="py-3 text-charcoal-900" data-spec-condition>—</td>
               </tr>
               <tr class="border-t border-charcoal-900/10">
                 <th scope="row" class="py-3 text-left font-medium text-charcoal-500">Màu sắc</th>
-                <td class="py-3 text-charcoal-900"><%= product.color %></td>
+                <td class="py-3 text-charcoal-900" data-spec-color>—</td>
               </tr>
-              <% if (product.notes) { %>
-              <tr class="border-t border-charcoal-900/10">
-                <th scope="row" class="py-3 text-left font-medium text-charcoal-500">Ghi chú</th>
-                <td class="py-3 text-charcoal-900"><%= product.notes %></td>
-              </tr>
-              <% } %>
             </tbody>
           </table>
 

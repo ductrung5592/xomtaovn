@@ -5,6 +5,8 @@ const {
   getCategories,
   formatPriceVND,
   getFilterOptions,
+  getPriceRange,
+  getWarrantyPolicy,
 } = require("../lib/data");
 
 router.get("/gioi-thieu", (req, res) => {
@@ -13,6 +15,10 @@ router.get("/gioi-thieu", (req, res) => {
 
 router.get("/lien-he", (req, res) => {
   res.render("contact", { pageTitle: "Liên hệ" });
+});
+
+router.get("/bao-hanh", (req, res) => {
+  res.render("warranty", { pageTitle: "Chính sách bảo hành", policy: getWarrantyPolicy() });
 });
 
 // Chỉ dùng để xem trước giao diện với dữ liệu minh hoạ — không hoạt động ở production.
@@ -30,6 +36,7 @@ router.get("/preview-demo", (req, res, next) => {
     filterOptions,
     filters: {},
     formatPriceVND,
+    getPriceRange,
     isDemoView: true,
   });
 });
