@@ -3,7 +3,7 @@
     "model": "iPhone 14 Plus",
     "line": "iPhone 14",
     "slug": "iphone-14-plus",
-    "image": "/images/models/iphone-14-plus.svg",
+    "image": "/images/models/iphone-14-plus.png",
     "variants": [
       {
         "id": "p011",
@@ -154,7 +154,7 @@
     "model": "iPhone 8 Plus",
     "line": "iPhone 8",
     "slug": "iphone-8-plus",
-    "image": "/images/models/iphone-8-plus.svg",
+    "image": "/images/models/iphone-8-plus.png",
     "variants": [
       {
         "id": "p002",
@@ -175,7 +175,7 @@
     "model": "iPhone 16 Pro Max",
     "line": "iPhone 16",
     "slug": "iphone-16-pro-max",
-    "image": "/images/models/iphone-16-pro-max.svg",
+    "image": "/images/models/iphone-16-pro-max.png",
     "variants": [
       {
         "id": "p058",
@@ -443,7 +443,7 @@
     "model": "iPhone 15 Plus",
     "line": "iPhone 15",
     "slug": "iphone-15-plus",
-    "image": "/images/models/iphone-15-plus.svg",
+    "image": "/images/models/iphone-15-plus.png",
     "variants": [
       {
         "id": "p020",
@@ -555,7 +555,7 @@
     "model": "iPhone 14 Pro Max",
     "line": "iPhone 14",
     "slug": "iphone-14-pro-max",
-    "image": "/images/models/iphone-14-pro-max.svg",
+    "image": "/images/models/iphone-14-pro-max.png",
     "variants": [
       {
         "id": "p155",
@@ -823,7 +823,7 @@
     "model": "iPhone 11",
     "line": "iPhone 11",
     "slug": "iphone-11",
-    "image": "/images/models/iphone-11.svg",
+    "image": "/images/models/iphone-11.png",
     "variants": [
       {
         "id": "p024",
@@ -870,7 +870,7 @@
     "model": "iPhone 15 Pro",
     "line": "iPhone 15",
     "slug": "iphone-15-pro",
-    "image": "/images/models/iphone-15-pro.svg",
+    "image": "/images/models/iphone-15-pro.png",
     "variants": [
       {
         "id": "p027",
@@ -930,7 +930,7 @@
     "model": "iPhone 12",
     "line": "iPhone 12",
     "slug": "iphone-12",
-    "image": "/images/models/iphone-12.svg",
+    "image": "/images/models/iphone-12.png",
     "variants": [
       {
         "id": "p031",
@@ -951,7 +951,7 @@
     "model": "iPhone 16 Pro",
     "line": "iPhone 16",
     "slug": "iphone-16-pro",
-    "image": "/images/models/iphone-16-pro.svg",
+    "image": "/images/models/iphone-16-pro.png",
     "variants": [
       {
         "id": "p032",
@@ -1024,7 +1024,7 @@
     "model": "iPhone 14",
     "line": "iPhone 14",
     "slug": "iphone-14",
-    "image": "/images/models/iphone-14.svg",
+    "image": "/images/models/iphone-14.png",
     "variants": [
       {
         "id": "p037",
@@ -1045,7 +1045,7 @@
     "model": "iPhone 13",
     "line": "iPhone 13",
     "slug": "iphone-13",
-    "image": "/images/models/iphone-13.svg",
+    "image": "/images/models/iphone-13.png",
     "variants": [
       {
         "id": "p038",
@@ -1144,7 +1144,7 @@
     "model": "iPhone 11 Pro Max",
     "line": "iPhone 11",
     "slug": "iphone-11-pro-max",
-    "image": "/images/models/iphone-11-pro-max.svg",
+    "image": "/images/models/iphone-11-pro-max.png",
     "variants": [
       {
         "id": "p075",
@@ -1373,7 +1373,7 @@
     "model": "iPhone 14 Pro",
     "line": "iPhone 14",
     "slug": "iphone-14-pro",
-    "image": "/images/models/iphone-14-pro.svg",
+    "image": "/images/models/iphone-14-pro.png",
     "variants": [
       {
         "id": "p066",
@@ -1693,7 +1693,7 @@
     "model": "iPhone 17 Pro",
     "line": "iPhone 17",
     "slug": "iphone-17-pro",
-    "image": "/images/models/iphone-17-pro.svg",
+    "image": "/images/models/iphone-17-pro.png",
     "variants": [
       {
         "id": "p061",
@@ -1727,7 +1727,7 @@
     "model": "iPhone 17 Pro Max",
     "line": "iPhone 17",
     "slug": "iphone-17-pro-max",
-    "image": "/images/models/iphone-17-pro-max.svg",
+    "image": "/images/models/iphone-17-pro-max.png",
     "variants": [
       {
         "id": "p062",
@@ -1761,7 +1761,7 @@
     "model": "iPhone 13 Pro Max",
     "line": "iPhone 13",
     "slug": "iphone-13-pro-max",
-    "image": "/images/models/iphone-13-pro-max.svg",
+    "image": "/images/models/iphone-13-pro-max.png",
     "variants": [
       {
         "id": "p069",
@@ -1782,7 +1782,7 @@
     "model": "iPhone 15 Pro Max",
     "line": "iPhone 15",
     "slug": "iphone-15-pro-max",
-    "image": "/images/models/iphone-15-pro-max.svg",
+    "image": "/images/models/iphone-15-pro-max.png",
     "variants": [
       {
         "id": "p124",
@@ -1959,7 +1959,7 @@
     "model": "iPhone 16 Plus",
     "line": "iPhone 16",
     "slug": "iphone-16-plus",
-    "image": "/images/models/iphone-16-plus.svg",
+    "image": "/images/models/iphone-16-plus.png",
     "variants": [
       {
         "id": "p113",
@@ -2032,7 +2032,7 @@
     "model": "iPhone 16",
     "line": "iPhone 16",
     "slug": "iphone-16",
-    "image": "/images/models/iphone-16.svg",
+    "image": "/images/models/iphone-16.png",
     "variants": [
       {
         "id": "p118",
@@ -2092,7 +2092,7 @@
     "model": "iPhone XS Max",
     "line": "iPhone XS",
     "slug": "iphone-xs-max",
-    "image": "/images/models/iphone-xs-max.svg",
+    "image": "/images/models/iphone-xs-max.png",
     "variants": [
       {
         "id": "p132",
@@ -2126,7 +2126,7 @@
     "model": "iPhone 17",
     "line": "iPhone 17",
     "slug": "iphone-17",
-    "image": "/images/models/iphone-17.svg",
+    "image": "/images/models/iphone-17.png",
     "variants": [
       {
         "id": "p138",
@@ -2212,7 +2212,7 @@
     "model": "iPhone 12 Pro Max",
     "line": "iPhone 12",
     "slug": "iphone-12-pro-max",
-    "image": "/images/models/iphone-12-pro-max.svg",
+    "image": "/images/models/iphone-12-pro-max.png",
     "variants": [
       {
         "id": "p145",

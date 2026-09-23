@@ -14,6 +14,15 @@
   "engines": {
     "node": ">=18"
   },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      "data",
+      "scripts",
+      "package.json"
+    ],
+    "ext": "js,mjs,cjs,json,ejs"
+  },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2"

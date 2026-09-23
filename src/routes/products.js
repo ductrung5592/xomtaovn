@@ -6,6 +6,7 @@ const {
   getProductGroupBySlug,
   filterProducts,
   formatPriceVND,
+  formatStorage,
   getFilterOptions,
   getPriceRange,
 } = require("../lib/data");
@@ -24,6 +25,7 @@ router.get("/", (req, res) => {
     filterOptions,
     filters: { line, storage, condition, maxPrice },
     formatPriceVND,
+    formatStorage,
     getPriceRange,
     isDemoView: false,
   });
@@ -38,6 +40,7 @@ router.get("/:slug", (req, res, next) => {
     pageTitle: product.model,
     product,
     formatPriceVND,
+    formatStorage,
     getPriceRange,
   });
 });

@@ -58,6 +58,11 @@ function getPriceRange(group) {
   return { min: Math.min(...prices), max: Math.max(...prices) };
 }
 
+function formatStorage(gb) {
+  if (gb >= 1024 && gb % 1024 === 0) return gb / 1024 + "TB";
+  return gb + "GB";
+}
+
 function getGroupStorages(group) {
   return [...new Set(group.variants.map((v) => v.storageGb))].sort((a, b) => a - b);
 }
@@ -92,6 +97,7 @@ module.exports = {
   getDemoProducts,
   getProductGroupBySlug,
   formatPriceVND,
+  formatStorage,
   filterProducts,
   getFilterOptions,
   getInStockVariants,

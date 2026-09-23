@@ -92,6 +92,11 @@
       }).format(n);
     }
 
+    function fmtStorage(gb) {
+      if (gb >= 1024 && gb % 1024 === 0) return gb / 1024 + "TB";
+      return gb + "GB";
+    }
+
     function uniq(arr) {
       return arr.filter(function (v, i) {
         return arr.indexOf(v) === i;
@@ -118,7 +123,7 @@
       storagesAvailable().forEach(function (gb) {
         var btn = document.createElement("button");
         btn.type = "button";
-        btn.textContent = gb + "GB";
+        btn.textContent = fmtStorage(gb);
         btn.className = "variant-chip" + (state.storage === gb ? " variant-chip-active" : "");
         btn.addEventListener("click", function () { selectStorage(gb); });
         storageWrap.appendChild(btn);
@@ -188,7 +193,7 @@
       var v = variants.filter(function (x) { return x.id === state.variantId; })[0];
       if (!v) return;
       priceEl.textContent = fmtPrice(v.price);
-      if (specStorage) specStorage.textContent = v.storageGb + "GB";
+      if (specStorage) specStorage.textContent = fmtStorage(v.storageGb);
       if (specColor) specColor.textContent = v.color;
       if (specBattery) specBattery.textContent = v.batteryHealth + "%";
       if (specCondition) specCondition.textContent = v.cosmeticCondition;

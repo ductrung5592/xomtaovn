@@ -59,11 +59,18 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
    - `stockStatus`: `"in_stock"` mặc định, chuyển `"sold"` khi anh báo đã bán.
    - `addedAt` / `updatedAt`: ngày hiện tại (định dạng `YYYY-MM-DD`).
 
-4. **Ảnh đại diện dòng máy**: nếu nhóm `model` đó **chưa có ảnh** (dòng máy hoàn toàn mới, chưa từng xuất hiện trong `data/products.json`), tạo ảnh bằng lệnh:
-   ```
-   node scripts/generate-model-image.js "Tên dòng máy"
-   ```
-   Lệnh này tự sinh SVG đại diện theo đúng phong cách vàng-đen của web (không tải ảnh thật từ internet để tránh vướng bản quyền ảnh sản phẩm Apple) và lưu vào `src/public/images/models/`. Nếu dòng máy đã có ảnh rồi (đã từng bán trước đó) thì dùng lại, không tạo mới.
+4. **Ảnh đại diện dòng máy** (đã thử nhiều cách, đây là cách chốt — xem lịch sử bên dưới):
+   - Nguồn ảnh đại diện do **chính chủ shop tự tải về và bỏ vào thư mục `Ảnh dòng máy/`** ở gốc repo (đặt tên file theo tên model cho dễ, vd `iPhone 14 Plus.jpg`, không bắt buộc đúng định dạng slug).
+   - Khi thấy ảnh mới trong `Ảnh dòng máy/`: đọc ảnh để xác định đúng model, resize/nén nếu ảnh gốc nặng (>1.5MB, cạnh dài ~1600px là hợp lý), lưu vào `src/public/images/models/<slug>.jpg` (dùng `require('./src/lib/slugify').slugify(model)` để ra đúng tên file), rồi cập nhật trường `image` trong nhóm model tương ứng ở `data/products.json`.
+   - Sau khi đã lấy xong, **di chuyển ảnh gốc** từ `Ảnh dòng máy/` sang `Ảnh dòng máy/đã xử lý/` (tạo thư mục con này nếu chưa có) — cùng logic với `Kiểm kho hàng ngày/đã xử lý/`.
+   - Nếu dòng máy chưa có ảnh thật (chủ shop chưa kịp cung cấp), dùng tạm ảnh SVG tự sinh để trang không bị thiếu ảnh:
+     ```
+     node scripts/generate-model-image.js "Tên dòng máy"
+     ```
+     Thay bằng ảnh thật ngay khi có.
+   - Nếu dòng máy đã có ảnh rồi (đã từng bán trước đó) thì dùng lại, không cần xin ảnh mới.
+
+   **Lịch sử quyết định (để không lặp lại)**: từng thử để Claude tự tìm ảnh thật trên Wikimedia Commons (giấy phép tự do, tránh vướng bản quyền Apple) — nhưng chất lượng ảnh cộng đồng không đồng đều (nhiều ảnh cầm tay, dính thương hiệu cửa hàng khác, ảnh nghệ thuật xoá phông...), chủ shop xem không ưng, nên **không tự động tải ảnh từ Commons/internet nữa**. Cũng từng dùng SVG tự vẽ hoàn toàn (sạch nhưng trừu tượng, chủ shop muốn ảnh thật hơn). Giải pháp hiện tại: chủ shop tự chọn & tải ảnh ưng ý, Claude chỉ xử lý kỹ thuật (resize, đặt tên, gắn vào data).
 
 5. **Không cần copy/di chuyển ảnh vào `src/public/uploads/...` nữa** — bước này đã bỏ, vì web không hiển thị ảnh riêng từng máy.
 

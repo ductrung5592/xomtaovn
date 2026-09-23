@@ -16,14 +16,14 @@
       <span class="absolute top-3 left-3 badge bg-charcoal-950/80 text-cream-50/90">Ảnh minh hoạ</span>
     <% } %>
     <span class="absolute top-3 right-3 badge <%= inStockCount === 0 ? 'bg-charcoal-900/80 text-cream-50/70' : 'bg-gold-500 text-charcoal-950' %>">
-      <%= inStockCount === 0 ? 'Đã bán hết' : inStockCount + ' máy có sẵn' %>
+      <%= inStockCount === 0 ? 'Đã bán hết' : 'Máy có sẵn' %>
     </span>
   </div>
   <div class="p-4 flex flex-col gap-2 flex-1">
     <h3 class="font-display font-bold text-charcoal-950 leading-snug"><%= product.model %></h3>
     <div class="flex flex-wrap gap-1.5 text-[11px] text-charcoal-700">
       <% storages.forEach(function(gb) { %>
-        <span class="badge bg-charcoal-900/5"><%= gb %>GB</span>
+        <span class="badge bg-charcoal-900/5"><%= formatStorage(gb) %></span>
       <% }); %>
     </div>
     <div class="mt-auto pt-2 flex flex-col gap-1">

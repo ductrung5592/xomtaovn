@@ -1,21 +1,12 @@
 {
   "title": "Vì sao chọn Xóm Táo?",
-  "subtitle": "Bảng so sánh sẽ được chủ shop bổ sung chi tiết — dưới đây là cấu trúc mẫu.",
+  "subtitle": "Khác biệt của Xóm Táo so với các đơn vị khác",
   "rows": [
-    {
-      "criteria": "Cam kết máy zin",
-      "xomTao": "Sẽ cập nhật",
-      "otherShops": "Sẽ cập nhật"
-    },
-    {
-      "criteria": "Chính sách bảo hành",
-      "xomTao": "Sẽ cập nhật",
-      "otherShops": "Sẽ cập nhật"
-    },
-    {
-      "criteria": "Kiểm tra cùng thợ độc lập",
-      "xomTao": "Sẽ cập nhật",
-      "otherShops": "Sẽ cập nhật"
-    }
+    { "criteria": "Chỉ bán máy zin", "xomTao": true, "otherShops": false },
+    { "criteria": "Công khai, minh bạch từng cây máy", "xomTao": true, "otherShops": false },
+    { "criteria": "Không báo ảo kéo khách, tránh mất thời gian", "xomTao": true, "otherShops": false },
+    { "criteria": "Được check thợ bất kỳ", "xomTao": true, "otherShops": false },
+    { "criteria": "Nói không với máy dựng, sửa main, lên vỏ", "xomTao": true, "otherShops": false },
+    { "criteria": "Tới là có máy, không đợi khách tới mới đi mua máy chỗ khác", "xomTao": true, "otherShops": false }
   ]
 }

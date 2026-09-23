@@ -40,7 +40,7 @@
             <select id="storage" name="storage" class="mt-1.5 w-full rounded-lg border border-charcoal-900/15 py-2.5 px-3 text-sm min-h-[44px]">
               <option value="">Tất cả</option>
               <% filterOptions.storages.forEach(function(gb) { %>
-                <option value="<%= gb %>" <%= String(filters.storage) === String(gb) ? "selected" : "" %>><%= gb %>GB</option>
+                <option value="<%= gb %>" <%= String(filters.storage) === String(gb) ? "selected" : "" %>><%= formatStorage(gb) %></option>
               <% }); %>
             </select>
           </div>
@@ -85,7 +85,7 @@
           <p class="text-sm text-charcoal-500 mb-4"><%= products.length %> sản phẩm</p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
             <% products.forEach(function(product) { %>
-              <%- include("partials/product-card", { product, formatPriceVND, getPriceRange }) %>
+              <%- include("partials/product-card", { product, formatPriceVND, formatStorage, getPriceRange }) %>
             <% }); %>
           </div>
         <% } %>

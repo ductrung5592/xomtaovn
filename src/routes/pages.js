@@ -4,6 +4,7 @@ const {
   getDemoProducts,
   getCategories,
   formatPriceVND,
+  formatStorage,
   getFilterOptions,
   getPriceRange,
   getWarrantyPolicy,
@@ -36,6 +37,7 @@ router.get("/preview-demo", (req, res, next) => {
     filterOptions,
     filters: {},
     formatPriceVND,
+    formatStorage,
     getPriceRange,
     isDemoView: true,
   });

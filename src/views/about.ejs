@@ -43,16 +43,28 @@
           <thead class="bg-charcoal-950 text-cream-50">
             <tr>
               <th scope="col" class="py-3 px-4 text-left font-medium">Tiêu chí</th>
-              <th scope="col" class="py-3 px-4 text-left font-medium text-gold-400">Xóm Táo</th>
-              <th scope="col" class="py-3 px-4 text-left font-medium">Nơi khác</th>
+              <th scope="col" class="py-3 px-4 text-center font-medium text-gold-400">Xóm Táo</th>
+              <th scope="col" class="py-3 px-4 text-center font-medium">Nơi khác</th>
             </tr>
           </thead>
           <tbody>
             <% comparison.rows.forEach(function(row, i) { %>
             <tr class="<%= i % 2 === 0 ? 'bg-cream-50' : 'bg-white' %>">
               <td class="py-3 px-4 font-medium text-charcoal-900"><%= row.criteria %></td>
-              <td class="py-3 px-4 font-semibold text-gold-600"><%= row.xomTao %></td>
-              <td class="py-3 px-4 text-charcoal-500"><%= row.otherShops %></td>
+              <td class="py-3 px-4 text-center">
+                <% if (row.xomTao) { %>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 mx-auto text-green-600" aria-label="Có"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.03-9.28a.75.75 0 00-1.06-1.06L9 10.63 7.03 8.66a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l4.5-4.5z" clip-rule="evenodd" /></svg>
+                <% } else { %>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 mx-auto text-red-400" aria-label="Không"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" /></svg>
+                <% } %>
+              </td>
+              <td class="py-3 px-4 text-center">
+                <% if (row.otherShops) { %>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 mx-auto text-green-600" aria-label="Có"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.03-9.28a.75.75 0 00-1.06-1.06L9 10.63 7.03 8.66a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l4.5-4.5z" clip-rule="evenodd" /></svg>
+                <% } else { %>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 mx-auto text-red-400" aria-label="Không"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" /></svg>
+                <% } %>
+              </td>
             </tr>
             <% }); %>
           </tbody>

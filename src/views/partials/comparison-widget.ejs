@@ -2,13 +2,13 @@
   <button
     type="button"
     id="comparisonTrigger"
-    class="inline-flex items-center gap-1.5 rounded-full border border-gold-500/50 px-4 py-2 text-xs sm:text-sm font-medium text-gold-400 hover:bg-gold-500/10 transition-colors min-h-[44px]"
+    class="inline-flex items-center gap-1.5 rounded-full border border-gold-600/50 px-4 py-2 text-xs sm:text-sm font-medium text-gold-700 hover:bg-gold-500/10 transition-colors min-h-[44px]"
     aria-haspopup="dialog"
     aria-expanded="false"
     aria-controls="comparisonPopover"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 flex-shrink-0" aria-hidden="true">
-      <path fill-rule="evenodd" d="M18 10A8 8 0 11 2 10a8 8 0 0116 0zM9 8a1 1 0 112 0v5a1 1 0 11-2 0V8zm1-4a1.25 1.25 0 100 2.5A1.25 1.25 0 0010 4z" clip-rule="evenodd" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 flex-shrink-0 text-green-600" aria-hidden="true">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.03-9.28a.75.75 0 00-1.06-1.06L9 10.63 7.03 8.66a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l4.5-4.5z" clip-rule="evenodd" />
     </svg>
     <span>Vì sao chọn Xóm Táo?</span>
   </button>
@@ -29,16 +29,28 @@
       <thead>
         <tr class="text-left text-cream-50/50">
           <th scope="col" class="py-1 pr-2 font-medium">Tiêu chí</th>
-          <th scope="col" class="py-1 pr-2 font-medium text-gold-400">Xóm Táo</th>
-          <th scope="col" class="py-1 font-medium">Nơi khác</th>
+          <th scope="col" class="py-1 px-1 font-medium text-gold-400 text-center">Xóm Táo</th>
+          <th scope="col" class="py-1 px-1 font-medium text-center">Nơi khác</th>
         </tr>
       </thead>
       <tbody>
         <% comparison.rows.forEach(function(row) { %>
         <tr class="border-t border-white/10 align-top">
           <td class="py-2 pr-2 text-cream-50/80"><%= row.criteria %></td>
-          <td class="py-2 pr-2 font-medium text-gold-400"><%= row.xomTao %></td>
-          <td class="py-2 text-cream-50/50"><%= row.otherShops %></td>
+          <td class="py-2 px-1 text-center">
+            <% if (row.xomTao) { %>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 mx-auto text-green-500" aria-label="Có"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.03-9.28a.75.75 0 00-1.06-1.06L9 10.63 7.03 8.66a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l4.5-4.5z" clip-rule="evenodd" /></svg>
+            <% } else { %>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 mx-auto text-red-400" aria-label="Không"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" /></svg>
+            <% } %>
+          </td>
+          <td class="py-2 px-1 text-center">
+            <% if (row.otherShops) { %>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 mx-auto text-green-500" aria-label="Có"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.03-9.28a.75.75 0 00-1.06-1.06L9 10.63 7.03 8.66a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l4.5-4.5z" clip-rule="evenodd" /></svg>
+            <% } else { %>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 mx-auto text-red-400" aria-label="Không"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" /></svg>
+            <% } %>
+          </td>
         </tr>
         <% }); %>
       </tbody>

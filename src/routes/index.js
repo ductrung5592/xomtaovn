@@ -5,6 +5,7 @@ const {
   getCategories,
   getComparison,
   formatPriceVND,
+  formatStorage,
   getPriceRange,
 } = require("../lib/data");
 
@@ -20,6 +21,7 @@ router.get("/", (req, res) => {
     categories,
     comparison,
     formatPriceVND,
+    formatStorage,
     getPriceRange,
   });
 });

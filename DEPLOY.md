@@ -44,4 +44,4 @@ Mỗi khi Claude cập nhật tồn kho và push code mới lên nhánh `main` (
 
 - Mở domain thật, kiểm tra trang chủ/sản phẩm/về chúng tôi/liên hệ hiển thị đúng.
 - Kiểm tra nút Zalo/Messenger/Hotline trỏ đúng số/link thật (không còn placeholder).
-- Kiểm tra ảnh sản phẩm tải được (không bị 404) — vì ảnh nằm trong `src/public/uploads`, cần đảm bảo các ảnh đã được commit cùng code.
+- Kiểm tra ảnh sản phẩm tải được (không bị 404) — ảnh nằm trong `src/public/images/models`, cần đảm bảo các ảnh đã được commit cùng code.
