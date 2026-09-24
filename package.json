@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "Website ban iPhone cao cap cho Xom Tao",
-  "main": "src/app.js",
+  "main": "server.js",
   "scripts": {
     "dev": "concurrently \"npm:watch:css\" \"nodemon src/app.js\"",
     "build": "tailwindcss -i ./src/public/css/input.css -o ./src/public/css/styles.css --minify",
     "watch:css": "tailwindcss -i ./src/public/css/input.css -o ./src/public/css/styles.css --watch",
-    "start": "node src/app.js",
+    "start": "node server.js",
     "validate:products": "node scripts/validate-products.js"
   },
   "engines": {
