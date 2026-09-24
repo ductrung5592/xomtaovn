@@ -16,7 +16,7 @@ Mở `http://localhost:3000`.
 
 ```
 src/
-  app.js            Express app (đọc PORT từ biến môi trường)
+  (server.js ở thư mục gốc: Express app, đọc PORT từ biến môi trường)
   routes/           index (trang chủ), products (catalog + chi tiết), pages (về chúng tôi, liên hệ)
   views/            Template EJS
   lib/data.js       Đọc/lọc dữ liệu từ thư mục data/

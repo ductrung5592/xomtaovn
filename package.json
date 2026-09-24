@@ -5,7 +5,7 @@
   "description": "Website ban iPhone cao cap cho Xom Tao",
   "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"npm:watch:css\" \"nodemon src/app.js\"",
+    "dev": "concurrently \"npm:watch:css\" \"nodemon server.js\"",
     "build": "tailwindcss -i ./src/public/css/input.css -o ./src/public/css/styles.css --minify",
     "watch:css": "tailwindcss -i ./src/public/css/input.css -o ./src/public/css/styles.css --watch",
     "start": "node server.js",

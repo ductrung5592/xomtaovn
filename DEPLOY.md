@@ -28,7 +28,7 @@ Việc đăng nhập GitHub/Hostinger là do anh tự thao tác (Claude không �
 3. Hostinger sẽ tự nhận diện đây là app Node.js và gợi ý cấu hình — kiểm tra/điền:
    - **Node version**: 18, 20, 22 hoặc 24 (chọn bản mới nhất được hỗ trợ)
    - **Build command**: `npm run build`
-   - **Start command / Entry file**: `npm start` (chạy `src/app.js`)
+   - **Start command / Entry file**: `npm start` (chạy `server.js`)
    - **Branch**: `main`
 4. Thêm biến môi trường nếu cần (vd `NODE_ENV=production`) trong phần Environment Variables của app.
 5. Bấm **Deploy**. Hostinger sẽ `npm install`, chạy build command, rồi khởi động app.
