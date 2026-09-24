@@ -80,14 +80,14 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
 
 7. **Kiểm tra schema**: chạy `npm run validate:products` — phải thấy dòng "✓ data/products.json hợp lệ" trước khi đi tiếp. Nếu lỗi, sửa lại rồi chạy lại.
 
-8. **Commit & xác nhận trước khi push**: `git add`, `git commit` với message ngắn gọn (vd "Thêm 3 máy iPhone 13/14 mới"), sau đó **hỏi chủ shop xác nhận trước khi `git push`** vì đây là hành động ảnh hưởng tới repo dùng chung — không tự push mà không hỏi.
+8. **Commit & push tự động**: chủ shop đã cho phép (24/09/2026) — với quy trình cập nhật tồn kho, cứ làm tự động từ đầu đến cuối: `git add` các file dữ liệu/ảnh liên quan, `git commit` message ngắn gọn (vd "Cập nhật tồn kho: +5 máy, -3 máy"), rồi `git push origin main`, không cần hỏi lại. Sau đó báo ngắn gọn kết quả (thêm/xoá bao nhiêu máy, máy nào bỏ qua vì chưa rõ).
 
 ## Không được làm
 
 - Không tự bịa số liệu (giá, % pin, tình trạng) khi ảnh không đủ thông tin rõ ràng.
 - Không thêm sản phẩm demo/giả vào `data/products.json` — dữ liệu demo chỉ nằm ở `data/demo-products.json` (xem qua route `/preview-demo`, chỉ hoạt động ở môi trường dev).
 - Không thêm ảnh riêng cho từng máy (variant) — chỉ có 1 ảnh đại diện dùng chung cho cả dòng máy.
-- Không push lên GitHub mà chưa xác nhận với chủ shop.
+- Ngoài quy trình cập nhật tồn kho (vd sửa giao diện, code), vẫn hỏi chủ shop trước khi push.
 
 ## Thông tin liên quan khác
 
