@@ -56,7 +56,9 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
    - Nếu là dòng máy mới chưa từng có: tạo nhóm mới ở cấp cao nhất (`model`, `line`, `slug`, `image`, `variants: []`) rồi thêm variant vào.
    - `variant.id`: chuỗi ngắn tăng dần, không trùng với id đã có ở bất kỳ nhóm nào.
    - `slug` (cấp nhóm): dạng không dấu `iphone-13-pro-max`, không trùng nhóm khác. Có thể dùng `require('./src/lib/slugify').slugify(model)` để tạo đúng định dạng.
-   - `stockStatus`: `"in_stock"` mặc định, chuyển `"sold"` khi anh báo đã bán.
+   - `stockStatus`: luôn `"in_stock"`. Web chỉ hiện máy đang có hàng: máy đã bán / không còn trong bản kiểm kho thì **xoá hẳn khỏi `data/products.json`** (không đánh dấu `"sold"`). Nhóm model không còn máy nào thì xoá luôn nhóm.
+   - Mỗi bản kiểm kho (file zip/ảnh) là **ảnh chụp toàn bộ kho tại thời điểm đó**: đối chiếu với JSON theo (model, dung lượng, màu, pin, giá) — máy mới thì thêm, máy không còn trong ảnh thì xoá, giá đổi thì sửa.
+   - Máy có ghi chú tay (thay lưng/sửa chữa/ký gửi/khách cọc) hoặc ảnh kệ hàng khó đọc: không đăng, hỏi chủ shop.
    - `addedAt` / `updatedAt`: ngày hiện tại (định dạng `YYYY-MM-DD`).
 
 4. **Ảnh đại diện dòng máy** (đã thử nhiều cách, đây là cách chốt — xem lịch sử bên dưới):
