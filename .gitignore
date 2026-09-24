@@ -12,3 +12,6 @@ Kiểm kho hàng ngày/*
 !Kiểm kho hàng ngày/đã xử lý/
 Kiểm kho hàng ngày/đã xử lý/*
 !Kiểm kho hàng ngày/đã xử lý/.gitkeep
+
+# Ảnh dòng máy do chủ shop cung cấp — chỉ lưu local (ảnh đã xử lý nằm ở src/public/images/models)
+Ảnh dòng máy/
