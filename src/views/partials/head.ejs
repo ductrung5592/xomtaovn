@@ -18,5 +18,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', '<%= siteConfig.googleAnalyticsId %>');
+  // Đo lượt bấm liên hệ: Gọi / Zalo / Messenger
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var h = a.getAttribute('href') || '', ev = null;
+    if (h.indexOf('tel:') === 0) ev = 'lien_he_goi';
+    else if (h.indexOf('zalo.me') > -1) ev = 'lien_he_zalo';
+    else if (h.indexOf('m.me/') > -1 || h.indexOf('messenger.com') > -1) ev = 'lien_he_messenger';
+    if (ev) gtag('event', ev, { trang: location.pathname, tieu_de: document.title, transport_type: 'beacon' });
+  });
 </script>
 <% } %>
