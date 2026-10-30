@@ -57,4 +57,34 @@
   .unit-chip-sold {
     @apply opacity-50 cursor-not-allowed hover:border-charcoal-900/15;
   }
+  .blog-prose {
+    @apply text-base leading-relaxed text-charcoal-800;
+  }
+  .blog-prose > * + * {
+    @apply mt-4;
+  }
+  .blog-prose h2 {
+    @apply mt-10 text-2xl font-extrabold text-charcoal-950;
+  }
+  .blog-prose h3 {
+    @apply mt-8 text-lg font-bold text-charcoal-950;
+  }
+  .blog-prose a {
+    @apply text-gold-700 underline hover:text-gold-600;
+  }
+  .blog-prose ul {
+    @apply list-disc pl-6 space-y-2;
+  }
+  .blog-prose ol {
+    @apply list-decimal pl-6 space-y-2;
+  }
+  .blog-prose table {
+    @apply block overflow-x-auto text-sm;
+  }
+  .blog-prose th {
+    @apply bg-charcoal-950 px-4 py-2.5 text-left font-medium text-cream-50;
+  }
+  .blog-prose td {
+    @apply border-b border-charcoal-900/10 px-4 py-2.5;
+  }
 }

@@ -34,7 +34,7 @@
       </a>
 
       <nav class="hidden lg:flex items-center gap-1" aria-label="Điều hướng chính">
-        <% const navLinks = [ { href: "/", label: "Trang chủ" }, { href: "/san-pham", label: "Sản phẩm" }, { href: "/bao-hanh", label: "Bảo hành" }, { href: "/gioi-thieu", label: "Về chúng tôi" }, { href: "/lien-he", label: "Liên hệ" } ]; %>
+        <% const navLinks = [ { href: "/", label: "Trang chủ" }, { href: "/san-pham", label: "Sản phẩm" }, { href: "/bao-hanh", label: "Bảo hành" }, { href: "/blog", label: "Blog" }, { href: "/gioi-thieu", label: "Về chúng tôi" }, { href: "/lien-he", label: "Liên hệ" } ]; %>
         <% navLinks.forEach(function(link) { %>
           <a
             href="<%= link.href %>"
@@ -69,6 +69,7 @@
       <a href="/" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Trang chủ</a>
       <a href="/san-pham" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/san-pham' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Sản phẩm</a>
       <a href="/bao-hanh" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/bao-hanh' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Bảo hành</a>
+      <a href="/blog" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/blog' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Blog</a>
       <a href="/gioi-thieu" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/gioi-thieu' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Về chúng tôi</a>
       <a href="/lien-he" class="block rounded-lg px-3 py-3 text-sm font-medium <%= currentPath === '/lien-he' ? 'bg-gold-500/15 text-charcoal-950' : 'text-charcoal-700' %>">Liên hệ</a>
       <div class="pt-2">

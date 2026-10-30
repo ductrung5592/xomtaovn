@@ -1,7 +1,29 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title><%= typeof pageTitle !== "undefined" && pageTitle ? pageTitle + " | " + siteConfig.shopName : siteConfig.shopName %></title>
-<meta name="description" content="<%= siteConfig.tagline %>" />
+<%
+  const fullTitle = typeof pageTitle !== "undefined" && pageTitle ? pageTitle + " | " + siteConfig.shopName : siteConfig.shopName;
+  const description = typeof metaDescription !== "undefined" && metaDescription ? metaDescription : siteConfig.tagline;
+  const canonical = siteConfig.siteUrl + (typeof canonicalPath !== "undefined" ? canonicalPath : currentPath.replace(/\/+$/, "") || "/");
+  const shareImage = siteConfig.siteUrl + (typeof ogImage !== "undefined" && ogImage && !ogImage.endsWith(".svg") ? ogImage : "/images/hero-cover.jpg");
+%>
+<title><%= fullTitle %></title>
+<meta name="description" content="<%= description %>" />
+<% if (typeof noindex !== "undefined" && noindex) { %>
+<meta name="robots" content="noindex, follow" />
+<% } else { %>
+<link rel="canonical" href="<%= canonical %>" />
+<% } %>
+<meta property="og:type" content="<%= typeof ogType !== "undefined" ? ogType : "website" %>" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:site_name" content="<%= siteConfig.shopName %>" />
+<meta property="og:title" content="<%= fullTitle %>" />
+<meta property="og:description" content="<%= description %>" />
+<meta property="og:url" content="<%= canonical %>" />
+<meta property="og:image" content="<%= shareImage %>" />
+<meta name="twitter:card" content="summary_large_image" />
+<% (typeof jsonLd !== "undefined" ? jsonLd : []).forEach(function(schema) { %>
+<script type="application/ld+json"><%- JSON.stringify(schema).replace(/</g, "\\u003c") %></script>
+<% }); %>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -9,7 +31,8 @@
   rel="stylesheet"
 />
 <link rel="stylesheet" href="/css/styles.css" />
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
 <% if (!isDev && siteConfig.googleAnalyticsId) { %>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=<%= siteConfig.googleAnalyticsId %>"></script>

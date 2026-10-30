@@ -24,7 +24,7 @@
           <div class="relative aspect-square rounded-2xl overflow-hidden bg-charcoal-950">
             <img
               src="<%= product.image %>"
-              alt="Ảnh đại diện <%= product.model %>"
+              alt="<%= product.model %> cũ zin tại Xóm Táo"
               class="h-full w-full object-contain p-10"
               width="600" height="600"
             />
@@ -36,10 +36,10 @@
 
         <div>
           <span class="badge bg-gold-500/15 text-gold-700" data-stock-badge>Còn hàng</span>
-          <h1 class="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950"><%= product.model %></h1>
+          <h1 class="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-charcoal-950"><%= product.model %> cũ zin 100%</h1>
           <p class="mt-1 text-charcoal-500" data-stock-count></p>
 
-          <p class="mt-5 font-display text-3xl font-extrabold text-gold-600" data-selected-price>—</p>
+          <p class="mt-5 font-display text-3xl font-extrabold text-gold-600" data-selected-price>Từ <%= formatPriceVND(priceRange.min) %></p>
 
           <div class="mt-6">
             <p class="text-xs font-semibold uppercase tracking-wide text-charcoal-500 mb-2">Dung lượng</p>
@@ -88,6 +88,20 @@
             <a href="tel:<%= siteConfig.contact.hotline.phone %>" class="btn-dark">Gọi hotline</a>
           </div>
         </div>
+      </div>
+
+      <div class="mt-10 card p-5">
+        <h2 class="font-display text-lg font-bold text-charcoal-950">Mua <%= product.model %> cũ tại Hà Đông</h2>
+        <p class="mt-2 text-sm text-charcoal-700">
+          Xóm Táo hiện có <%= inStockCount %> máy <%= product.model %>, dung lượng <%= storages.join(", ") %>, màu <%= colors.join(", ") %>, giá từ <%= formatPriceVND(priceRange.min) %> đến <%= formatPriceVND(priceRange.max) %>.
+          Anh chị có thể ghé <%= siteConfig.address %> để xem máy, kiểm tra cùng thợ độc lập trước khi mua. Xem thêm <a href="/bao-hanh" class="text-gold-600 underline">chính sách bảo hành</a>.
+        </p>
+        <% if (relatedModels.length > 0) { %>
+          <p class="mt-3 text-sm text-charcoal-700">
+            Cùng dòng:
+            <% relatedModels.forEach(function(g, i) { %><a href="/san-pham/<%= g.slug %>" class="text-gold-600 underline"><%= g.model %></a><%= i < relatedModels.length - 1 ? ", " : "" %><% }); %>
+          </p>
+        <% } %>
       </div>
     </div>
   </section>

@@ -27,6 +27,8 @@
     "autoprefixer": "^10.4.20",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.12",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10"
   },
