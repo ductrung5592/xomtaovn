@@ -2150,7 +2150,7 @@
       {
         "id": "p061",
         "storageGb": 256,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "99KENG",
         "price": 28500000,
@@ -2171,7 +2171,7 @@
       {
         "id": "p403",
         "storageGb": 256,
-        "color": "Xanh dương",
+        "color": "Xanh Đậm",
         "batteryHealth": 100,
         "cosmeticCondition": "98.5%",
         "price": 29500000,
@@ -2184,7 +2184,7 @@
       {
         "id": "p281",
         "storageGb": 256,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "98.5%",
         "price": 29900000,
@@ -2197,7 +2197,7 @@
       {
         "id": "p284",
         "storageGb": 256,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 99,
         "cosmeticCondition": "98.5%",
         "price": 31500000,
@@ -2210,7 +2210,7 @@
       {
         "id": "p283",
         "storageGb": 256,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "99%",
         "price": 31900000,
@@ -2223,7 +2223,7 @@
       {
         "id": "p402",
         "storageGb": 256,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "KENG",
         "price": 32500000,
@@ -2236,7 +2236,7 @@
       {
         "id": "p225",
         "storageGb": 512,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "99%",
         "price": 33800000,
@@ -2249,7 +2249,7 @@
       {
         "id": "p286",
         "storageGb": 1024,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "99%",
         "price": 38500000,
@@ -2262,7 +2262,7 @@
       {
         "id": "p063",
         "storageGb": 2048,
-        "color": "Cam",
+        "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
         "cosmeticCondition": "99%",
         "price": 46800000,
@@ -2486,7 +2486,7 @@
       {
         "id": "p113",
         "storageGb": 128,
-        "color": "Tím",
+        "color": "Xanh Ultramarine",
         "batteryHealth": 91,
         "cosmeticCondition": "99%",
         "price": 18800000,
@@ -2499,7 +2499,7 @@
       {
         "id": "p114",
         "storageGb": 256,
-        "color": "Tím",
+        "color": "Xanh Ultramarine",
         "batteryHealth": 89,
         "cosmeticCondition": "99%",
         "price": 20000000,
@@ -2512,7 +2512,7 @@
       {
         "id": "p116",
         "storageGb": 256,
-        "color": "Xanh dương",
+        "color": "Xanh Mòng Két",
         "batteryHealth": 92,
         "cosmeticCondition": "99KENG",
         "price": 20300000,
@@ -2525,7 +2525,7 @@
       {
         "id": "p115",
         "storageGb": 256,
-        "color": "Xanh dương",
+        "color": "Xanh Mòng Két",
         "batteryHealth": 95,
         "cosmeticCondition": "KENG",
         "price": 20800000,

@@ -47,7 +47,7 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
    - `color`: màu máy, **dùng đúng tên màu chính hãng Apple, thống nhất** (không đặt tên theo cảm nhận):
      - 16 Pro/Pro Max: Titan Đen, Titan Trắng, Titan Tự Nhiên, Titan Sa Mạc (KHÔNG có Titan Hồng — màu hồng/vàng nhạt là Titan Sa Mạc)
      - 15 Pro/Pro Max: Titan Đen, Titan Trắng, Titan Xanh, Titan Tự Nhiên (chữ "Titan" đứng trước)
-     - 14 Pro/Pro Max: Đen, Bạc, Vàng, Tím Đậm · 17 Pro/Pro Max: Bạc, Cam, Xanh dương · 17: Đen, Trắng, Tím, Xanh, Xanh lá
+     - 14 Pro/Pro Max: Đen, Bạc, Vàng, Tím Đậm · 17 Pro/Pro Max: Bạc, Cam Vũ Trụ, Xanh Đậm · 17: Đen, Trắng, Tím, Xanh Sương, Xanh Lá · 16/16 Plus: Đen, Trắng, Hồng, Xanh Mòng Két, Xanh Ultramarine
      - 11 Pro Max/12 Pro Max/XS: Xám, Bạc, Vàng (+ Xanh Rêu cho 11 Pro, Xanh dương cho 12 Pro)
      - Dòng thường (13–16, Plus): Đen, Trắng, Hồng, Xanh dương, Xanh lá, Tím, Vàng, Đỏ
    - `batteryHealth`: % pin (số 0-100) — thường thấy trong ảnh chụp màn hình Cài đặt > Pin > Tình trạng pin
