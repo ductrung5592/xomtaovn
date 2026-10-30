@@ -44,7 +44,12 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
    - `model`: tên dòng máy (vd "iPhone 13", "iPhone 15 Pro Max")
    - `line`: dòng chính để lọc danh mục, khớp với `data/categories.json` (vd "iPhone 13")
    - `storageGb`: dung lượng (số, vd 128)
-   - `color`: màu máy
+   - `color`: màu máy, **dùng đúng tên màu chính hãng Apple, thống nhất** (không đặt tên theo cảm nhận):
+     - 16 Pro/Pro Max: Titan Đen, Titan Trắng, Titan Tự Nhiên, Titan Sa Mạc (KHÔNG có Titan Hồng — màu hồng/vàng nhạt là Titan Sa Mạc)
+     - 15 Pro/Pro Max: Titan Đen, Titan Trắng, Titan Xanh, Titan Tự Nhiên (chữ "Titan" đứng trước)
+     - 14 Pro/Pro Max: Đen, Bạc, Vàng, Tím Đậm · 17 Pro/Pro Max: Bạc, Cam, Xanh dương · 17: Đen, Trắng, Tím, Xanh, Xanh lá
+     - 11 Pro Max/12 Pro Max/XS: Xám, Bạc, Vàng (+ Xanh Rêu cho 11 Pro, Xanh dương cho 12 Pro)
+     - Dòng thường (13–16, Plus): Đen, Trắng, Hồng, Xanh dương, Xanh lá, Tím, Vàng, Đỏ
    - `batteryHealth`: % pin (số 0-100) — thường thấy trong ảnh chụp màn hình Cài đặt > Pin > Tình trạng pin
    - `cosmeticCondition`: mô tả tình trạng ngoại hình (vd "Như mới 99%", "Tốt 95%", "Khá 90%")
    - `price`: giá bán (VNĐ)
