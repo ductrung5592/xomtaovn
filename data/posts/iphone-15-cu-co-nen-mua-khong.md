@@ -39,7 +39,7 @@ faq:
     a: "Apple thiết kế pin iPhone 15 trở về sau giữ khoảng 80% dung lượng sau 1.000 chu kỳ sạc đầy, gấp đôi mức 500 chu kỳ của iPhone 14 trở về trước. Khi mua, xem thêm số chu kỳ sạc trong mục Cài đặt để biết máy đã dùng nhiều hay ít."
 ---
 
-**iPhone 15 cũ có nên mua không?** Câu trả lời ngắn: **nên, với người cần một chiếc iPhone gọn, chụp đẹp, dùng mượt vài năm nữa mà không muốn bỏ ra gần 18 triệu cho iPhone 16.** Nhưng có một điều phải nói trước: iPhone 15 thường **không có Apple Intelligence**. Nếu anh chị mua máy vì AI, bài này sẽ chỉ hướng khác cho đỡ tiếc tiền.
+**iPhone 15 cũ có nên mua không?** Câu trả lời ngắn: **nên, với người cần một chiếc iPhone gọn, chụp đẹp, dùng mượt vài năm nữa mà không muốn bỏ ra hơn 17 triệu cho iPhone 16.** Nhưng có một điều phải nói trước: iPhone 15 thường **không có Apple Intelligence**. Nếu anh chị mua máy vì AI, bài này sẽ chỉ hướng khác cho đỡ tiếc tiền.
 
 Xóm Táo viết bài này theo đúng kiểu nói chuyện ở quầy: máy hay ở đâu, thiếu ở đâu, đặt cạnh các đời khác thì sao, và giá thật hôm nay là bao nhiêu.
 
