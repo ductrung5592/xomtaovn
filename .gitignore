@@ -18,3 +18,4 @@ Kiểm kho hàng ngày/
 
 # File Excel xuất tồn kho (tạo bằng scripts/export-inventory-xlsx.js)
 Tồn kho Xóm Táo*.xlsx
+data/imei.json

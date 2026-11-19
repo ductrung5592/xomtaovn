@@ -102,3 +102,5 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
 ## Xuất Excel tồn kho
 
 Khi chủ shop nhắn "xuất excel tồn kho" (hoặc đi kèm lúc cập nhật kho): chạy `npm install --no-save xlsx` rồi `node scripts/export-inventory-xlsx.js` → ra file `Tồn kho Xóm Táo DD-MM-YYYY.xlsx` ở gốc repo (2 sheet: "Tồn kho" từng máy, "Tổng hợp" theo dòng máy + dung lượng). File này đã gitignore, không commit; gửi cho chủ shop bằng SendUserFile.
+
+**IMEI (chỉ dùng cho file Excel, không đưa lên web):** số IMEI nằm ở `data/imei.json` (gitignore) dạng `{ "p123": { "imei": "...", "note": "" } }`. Mỗi lần cập nhật tồn kho, đọc luôn IMEI 15 số trên tem (kiểm tra checksum Luhn; số nào không qua checksum thì để trống, không đoán) và ghi vào file này cho máy mới. `scripts/export-inventory-xlsx.js` sẽ đọc file này để điền cột IMEI.

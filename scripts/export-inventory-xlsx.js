@@ -6,6 +6,9 @@ const XLSX = require("xlsx");
 
 const root = path.join(__dirname, "..");
 const products = JSON.parse(fs.readFileSync(path.join(root, "data", "products.json"), "utf8"));
+// IMEI nằm ở data/imei.json (gitignore, không đưa lên web/GitHub): { "<mã máy>": { imei, note } }
+let imeiMap = {};
+try { imeiMap = JSON.parse(fs.readFileSync(path.join(root, "data", "imei.json"), "utf8")); } catch (e) {}
 const fmtStorage = (gb) => (gb >= 1024 ? gb / 1024 + "TB" : gb + "GB");
 const today = new Date().toISOString().slice(0, 10);
 const [y, m, d] = today.split("-");
@@ -20,16 +23,16 @@ for (const g of products) {
 }
 rows.sort((a, b) => a.g.model.localeCompare(b.g.model, "vi") || a.v.storageGb - b.v.storageGb || a.v.price - b.v.price);
 
-const header = ["STT", "Dòng máy", "Dung lượng", "Màu", "Pin (%)", "Tình trạng", "Giá bán (VNĐ)", "Mã máy", "Ngày nhập"];
+const header = ["STT", "Dòng máy", "Dung lượng", "Màu", "Pin (%)", "Tình trạng", "Giá bán (VNĐ)", "Mã máy", "Ngày nhập", "IMEI", "Ghi chú IMEI"];
 const aoa = [header];
 rows.forEach(({ g, v }, i) => {
-  aoa.push([i + 1, g.model, fmtStorage(v.storageGb), v.color, v.batteryHealth, v.cosmeticCondition, v.price, v.id, v.addedAt]);
+  aoa.push([i + 1, g.model, fmtStorage(v.storageGb), v.color, v.batteryHealth, v.cosmeticCondition, v.price, v.id, v.addedAt, (imeiMap[v.id] || {}).imei || "", (imeiMap[v.id] || {}).note || ""]);
 });
 aoa.push([]);
-aoa.push(["", "TỔNG", rows.length + " máy", "", "", "", rows.reduce((s, r) => s + r.v.price, 0), "", ""]);
+aoa.push(["", "TỔNG", rows.length + " máy", "", "", "", rows.reduce((s, r) => s + r.v.price, 0), "", "", "", ""]);
 const ws1 = XLSX.utils.aoa_to_sheet(aoa);
-ws1["!cols"] = [{ wch: 6 }, { wch: 20 }, { wch: 12 }, { wch: 18 }, { wch: 9 }, { wch: 13 }, { wch: 16 }, { wch: 9 }, { wch: 12 }];
-ws1["!autofilter"] = { ref: `A1:I${rows.length + 1}` };
+ws1["!cols"] = [{ wch: 6 }, { wch: 20 }, { wch: 12 }, { wch: 18 }, { wch: 9 }, { wch: 13 }, { wch: 16 }, { wch: 9 }, { wch: 12 }, { wch: 18 }, { wch: 60 }];
+ws1["!autofilter"] = { ref: `A1:K${rows.length + 1}` };
 ws1["!freeze"] = { xSplit: 0, ySplit: 1 };
 for (let r = 1; r < aoa.length; r++) {
   const c = ws1[XLSX.utils.encode_cell({ r, c: 6 })];
