@@ -15,3 +15,6 @@ Kiểm kho hàng ngày/đã xử lý/*
 # Ảnh dòng máy do chủ shop cung cấp — chỉ lưu local (ảnh đã xử lý nằm ở src/public/images/models)
 Ảnh dòng máy/
 Kiểm kho hàng ngày/
+
+# File Excel xuất tồn kho (tạo bằng scripts/export-inventory-xlsx.js)
+Tồn kho Xóm Táo*.xlsx

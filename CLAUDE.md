@@ -98,3 +98,7 @@ Khi chủ shop nhắn kiểu "cập nhật kho", "có hàng mới", hoặc khi t
 
 - Thông tin liên hệ/giới thiệu/bảng so sánh nằm ở `data/site-config.json` và `data/comparison.json` — hiện đang là placeholder, cập nhật khi chủ shop cung cấp nội dung thật.
 - Chi tiết kiến trúc & lý do lựa chọn kỹ thuật: xem plan gốc hoặc README.md.
+
+## Xuất Excel tồn kho
+
+Khi chủ shop nhắn "xuất excel tồn kho" (hoặc đi kèm lúc cập nhật kho): chạy `npm install --no-save xlsx` rồi `node scripts/export-inventory-xlsx.js` → ra file `Tồn kho Xóm Táo DD-MM-YYYY.xlsx` ở gốc repo (2 sheet: "Tồn kho" từng máy, "Tổng hợp" theo dòng máy + dung lượng). File này đã gitignore, không commit; gửi cho chủ shop bằng SendUserFile.
