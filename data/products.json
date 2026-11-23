@@ -6,19 +6,6 @@
     "image": "/images/models/iphone-14-plus.png",
     "variants": [
       {
-        "id": "p418",
-        "storageGb": 128,
-        "color": "Tím",
-        "batteryHealth": 83,
-        "cosmeticCondition": "98%",
-        "price": 10700000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-10-29",
-        "notes": ""
-      },
-      {
         "id": "p497",
         "storageGb": 128,
         "color": "Đen",
@@ -55,32 +42,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-10-29",
         "updatedAt": "2026-10-29",
-        "notes": ""
-      },
-      {
-        "id": "p422",
-        "storageGb": 128,
-        "color": "Tím",
-        "batteryHealth": 85,
-        "cosmeticCondition": "98%",
-        "price": 11000000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-10-29",
-        "notes": ""
-      },
-      {
-        "id": "p416",
-        "storageGb": 128,
-        "color": "Trắng",
-        "batteryHealth": 86,
-        "cosmeticCondition": "98.5%",
-        "price": 11100000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-11-14",
         "notes": ""
       },
       {
@@ -139,13 +100,13 @@
         "id": "p003",
         "storageGb": 128,
         "color": "Đen",
-        "batteryHealth": 85,
+        "batteryHealth": 89,
         "cosmeticCondition": "99KENG",
         "price": 12300000,
         "currency": "VND",
         "stockStatus": "in_stock",
         "addedAt": "2026-09-18",
-        "updatedAt": "2026-11-14",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -300,19 +261,6 @@
         "notes": ""
       },
       {
-        "id": "p543",
-        "storageGb": 256,
-        "color": "Titan Sa Mạc",
-        "batteryHealth": 91,
-        "cosmeticCondition": "98.5%",
-        "price": 23700000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-19",
-        "updatedAt": "2026-11-19",
-        "notes": ""
-      },
-      {
         "id": "p541",
         "storageGb": 256,
         "color": "Titan Sa Mạc",
@@ -378,6 +326,19 @@
         "notes": ""
       },
       {
+        "id": "p578",
+        "storageGb": 256,
+        "color": "Titan Tự Nhiên",
+        "batteryHealth": 86,
+        "cosmeticCondition": "KENG",
+        "price": 24800000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
         "id": "p109",
         "storageGb": 256,
         "color": "Titan Sa Mạc",
@@ -388,19 +349,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-09-18",
         "updatedAt": "2026-11-19",
-        "notes": ""
-      },
-      {
-        "id": "p432",
-        "storageGb": 256,
-        "color": "Titan Đen",
-        "batteryHealth": 100,
-        "cosmeticCondition": "99%",
-        "price": 25200000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-11-14",
         "notes": ""
       },
       {
@@ -444,19 +392,6 @@
       },
       {
         "id": "p525",
-        "storageGb": 256,
-        "color": "Titan Tự Nhiên",
-        "batteryHealth": 91,
-        "cosmeticCondition": "KENG",
-        "price": 25600000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
-        "id": "p526",
         "storageGb": 256,
         "color": "Titan Tự Nhiên",
         "batteryHealth": 91,
@@ -526,19 +461,6 @@
         "color": "Titan Sa Mạc",
         "batteryHealth": 98,
         "cosmeticCondition": "KENG",
-        "price": 26500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
-        "id": "p533",
-        "storageGb": 256,
-        "color": "Titan Sa Mạc",
-        "batteryHealth": 100,
-        "cosmeticCondition": "99%",
         "price": 26500000,
         "currency": "VND",
         "stockStatus": "in_stock",
@@ -648,6 +570,19 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
         "updatedAt": "2026-11-19",
+        "notes": ""
+      },
+      {
+        "id": "p577",
+        "storageGb": 512,
+        "color": "Titan Sa Mạc",
+        "batteryHealth": 89,
+        "cosmeticCondition": "98%",
+        "price": 26800000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -932,19 +867,6 @@
         "notes": ""
       },
       {
-        "id": "p483",
-        "storageGb": 256,
-        "color": "Hồng",
-        "batteryHealth": 84,
-        "cosmeticCondition": "98.5%",
-        "price": 15500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
         "id": "p482",
         "storageGb": 256,
         "color": "Xanh lá",
@@ -1096,19 +1018,6 @@
         "notes": ""
       },
       {
-        "id": "p079",
-        "storageGb": 128,
-        "color": "Bạc",
-        "batteryHealth": 99,
-        "cosmeticCondition": "KENG",
-        "price": 18400000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-09-18",
-        "updatedAt": "2026-09-18",
-        "notes": ""
-      },
-      {
         "id": "p247",
         "storageGb": 128,
         "color": "Bạc",
@@ -1119,6 +1028,19 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-10-05",
         "updatedAt": "2026-10-05",
+        "notes": ""
+      },
+      {
+        "id": "p589",
+        "storageGb": 256,
+        "color": "Đen",
+        "batteryHealth": 79,
+        "cosmeticCondition": "98%",
+        "price": 14800000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -1135,16 +1057,107 @@
         "notes": ""
       },
       {
+        "id": "p582",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 79,
+        "cosmeticCondition": "98%",
+        "price": 15200000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p583",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 79,
+        "cosmeticCondition": "98%",
+        "price": 15300000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p579",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 76,
+        "cosmeticCondition": "98.5%",
+        "price": 15500000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p585",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 77,
+        "cosmeticCondition": "98.5%",
+        "price": 15500000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
         "id": "p561",
         "storageGb": 256,
         "color": "Tím Đậm",
         "batteryHealth": 78,
-        "cosmeticCondition": "96.5%",
+        "cosmeticCondition": "98.5%",
         "price": 15700000,
         "currency": "VND",
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
-        "updatedAt": "2026-11-19",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p580",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 79,
+        "cosmeticCondition": "98.5%",
+        "price": 15800000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p584",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 82,
+        "cosmeticCondition": "98.5%",
+        "price": 16100000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p587",
+        "storageGb": 256,
+        "color": "Đen",
+        "batteryHealth": 82,
+        "cosmeticCondition": "98.5%",
+        "price": 16100000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -1161,19 +1174,6 @@
         "notes": ""
       },
       {
-        "id": "p555",
-        "storageGb": 256,
-        "color": "Đen",
-        "batteryHealth": 88,
-        "cosmeticCondition": "98.5%",
-        "price": 16500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-19",
-        "updatedAt": "2026-11-19",
-        "notes": ""
-      },
-      {
         "id": "p550",
         "storageGb": 256,
         "color": "Vàng",
@@ -1184,19 +1184,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
         "updatedAt": "2026-11-19",
-        "notes": ""
-      },
-      {
-        "id": "p490",
-        "storageGb": 256,
-        "color": "Tím Đậm",
-        "batteryHealth": 89,
-        "cosmeticCondition": "99%",
-        "price": 17000000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
         "notes": ""
       },
       {
@@ -1252,6 +1239,19 @@
         "notes": ""
       },
       {
+        "id": "p588",
+        "storageGb": 256,
+        "color": "Đen",
+        "batteryHealth": 89,
+        "cosmeticCondition": "99%",
+        "price": 17200000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
         "id": "p557",
         "storageGb": 256,
         "color": "Đen",
@@ -1262,6 +1262,19 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
         "updatedAt": "2026-11-19",
+        "notes": ""
+      },
+      {
+        "id": "p586",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 100,
+        "cosmeticCondition": "99%",
+        "price": 18000000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -1307,13 +1320,26 @@
         "id": "p548",
         "storageGb": 256,
         "color": "Vàng",
-        "batteryHealth": 88,
+        "batteryHealth": 90,
         "cosmeticCondition": "KENG",
         "price": 18800000,
         "currency": "VND",
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
-        "updatedAt": "2026-11-19",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p581",
+        "storageGb": 256,
+        "color": "Tím Đậm",
+        "batteryHealth": 100,
+        "cosmeticCondition": "KENG",
+        "price": 18800000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -1379,19 +1405,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-10-05",
         "updatedAt": "2026-10-05",
-        "notes": ""
-      },
-      {
-        "id": "p487",
-        "storageGb": 512,
-        "color": "Vàng",
-        "batteryHealth": 77,
-        "cosmeticCondition": "98.5%",
-        "price": 17700000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
         "notes": ""
       },
       {
@@ -1762,19 +1775,6 @@
         "notes": ""
       },
       {
-        "id": "p303",
-        "storageGb": 256,
-        "color": "Titan Tự Nhiên",
-        "batteryHealth": 85,
-        "cosmeticCondition": "98.5%",
-        "price": 17900000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-14",
-        "updatedAt": "2026-10-14",
-        "notes": ""
-      },
-      {
         "id": "p215",
         "storageGb": 256,
         "color": "Titan Tự Nhiên",
@@ -1947,19 +1947,6 @@
         "notes": ""
       },
       {
-        "id": "p546",
-        "storageGb": 256,
-        "color": "Titan Đen",
-        "batteryHealth": 91,
-        "cosmeticCondition": "99%",
-        "price": 21200000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-19",
-        "updatedAt": "2026-11-19",
-        "notes": ""
-      },
-      {
         "id": "p473",
         "storageGb": 256,
         "color": "Titan Trắng",
@@ -1970,19 +1957,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-11-14",
         "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
-        "id": "p035",
-        "storageGb": 256,
-        "color": "Titan Đen",
-        "batteryHealth": 89,
-        "cosmeticCondition": "99%",
-        "price": 22200000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-09-18",
-        "updatedAt": "2026-09-18",
         "notes": ""
       },
       {
@@ -2017,6 +1991,32 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
         "updatedAt": "2026-11-19",
+        "notes": ""
+      },
+      {
+        "id": "p590",
+        "storageGb": 128,
+        "color": "Xanh dương",
+        "batteryHealth": 78,
+        "cosmeticCondition": "98.5%",
+        "price": 8800000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p591",
+        "storageGb": 128,
+        "color": "Đen",
+        "batteryHealth": 78,
+        "cosmeticCondition": "98.5%",
+        "price": 8900000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -2131,19 +2131,6 @@
     "slug": "iphone-11-pro-max",
     "image": "/images/models/iphone-11-pro-max.png",
     "variants": [
-      {
-        "id": "p043",
-        "storageGb": 256,
-        "color": "Xám",
-        "batteryHealth": 83,
-        "cosmeticCondition": "KENG",
-        "price": 8500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-09-18",
-        "updatedAt": "2026-09-18",
-        "notes": ""
-      },
       {
         "id": "p085",
         "storageGb": 512,
@@ -2733,6 +2720,32 @@
         "notes": "Bảo hành đến 01/2027"
       },
       {
+        "id": "p575",
+        "storageGb": 256,
+        "color": "Bạc",
+        "batteryHealth": 92,
+        "cosmeticCondition": "KENG",
+        "price": 28500000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
+        "id": "p576",
+        "storageGb": 256,
+        "color": "Bạc",
+        "batteryHealth": 93,
+        "cosmeticCondition": "KENG",
+        "price": 28600000,
+        "currency": "VND",
+        "stockStatus": "in_stock",
+        "addedAt": "2026-11-23",
+        "updatedAt": "2026-11-23",
+        "notes": ""
+      },
+      {
         "id": "p465",
         "storageGb": 512,
         "color": "Bạc",
@@ -2767,32 +2780,6 @@
     "image": "/images/models/iphone-17-pro-max.png",
     "variants": [
       {
-        "id": "p445",
-        "storageGb": 256,
-        "color": "Bạc",
-        "batteryHealth": 97,
-        "cosmeticCondition": "98%",
-        "price": 29500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
-        "id": "p462",
-        "storageGb": 256,
-        "color": "Xanh Đậm",
-        "batteryHealth": 100,
-        "cosmeticCondition": "98.5%",
-        "price": 29700000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
         "id": "p450",
         "storageGb": 256,
         "color": "Cam Vũ Trụ",
@@ -2819,19 +2806,6 @@
         "notes": ""
       },
       {
-        "id": "p457",
-        "storageGb": 256,
-        "color": "Xanh Đậm",
-        "batteryHealth": 100,
-        "cosmeticCondition": "98.5%",
-        "price": 30000000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
         "id": "p461",
         "storageGb": 256,
         "color": "Xanh Đậm",
@@ -2846,19 +2820,6 @@
       },
       {
         "id": "p443",
-        "storageGb": 256,
-        "color": "Bạc",
-        "batteryHealth": 99,
-        "cosmeticCondition": "98.5%",
-        "price": 30500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
-        "id": "p444",
         "storageGb": 256,
         "color": "Bạc",
         "batteryHealth": 99,
@@ -2966,25 +2927,12 @@
         "storageGb": 256,
         "color": "Xanh Đậm",
         "batteryHealth": 100,
-        "cosmeticCondition": "99%",
+        "cosmeticCondition": "KENG",
         "price": 31700000,
         "currency": "VND",
         "stockStatus": "in_stock",
         "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
-        "id": "p447",
-        "storageGb": 256,
-        "color": "Bạc",
-        "batteryHealth": 100,
-        "cosmeticCondition": "99%",
-        "price": 32200000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -3109,12 +3057,12 @@
         "storageGb": 512,
         "color": "Cam Vũ Trụ",
         "batteryHealth": 100,
-        "cosmeticCondition": "99KENG",
-        "price": 35400000,
+        "cosmeticCondition": "KENG",
+        "price": 36000000,
         "currency": "VND",
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
-        "updatedAt": "2026-11-19",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -3256,19 +3204,6 @@
         "notes": ""
       },
       {
-        "id": "p166",
-        "storageGb": 512,
-        "color": "Titan Xanh",
-        "batteryHealth": 100,
-        "cosmeticCondition": "98.5%",
-        "price": 21500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-09-24",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
         "id": "p479",
         "storageGb": 512,
         "color": "Titan Tự Nhiên",
@@ -3397,19 +3332,6 @@
     "image": "/images/models/iphone-17.png",
     "variants": [
       {
-        "id": "p467",
-        "storageGb": 256,
-        "color": "Đen",
-        "batteryHealth": 100,
-        "cosmeticCondition": "99%",
-        "price": 20200000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
         "id": "p335",
         "storageGb": 256,
         "color": "Đen",
@@ -3457,19 +3379,6 @@
     "image": "/images/models/iphone-12-pro-max.png",
     "variants": [
       {
-        "id": "p330",
-        "storageGb": 128,
-        "color": "Xanh dương",
-        "batteryHealth": 72,
-        "cosmeticCondition": "98%",
-        "price": 9800000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-14",
-        "updatedAt": "2026-11-14",
-        "notes": ""
-      },
-      {
         "id": "p562",
         "storageGb": 128,
         "color": "Xanh dương",
@@ -3480,19 +3389,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-11-19",
         "updatedAt": "2026-11-19",
-        "notes": ""
-      },
-      {
-        "id": "p274",
-        "storageGb": 128,
-        "color": "Xám",
-        "batteryHealth": 79,
-        "cosmeticCondition": "99%",
-        "price": 10700000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-05",
-        "updatedAt": "2026-10-05",
         "notes": ""
       },
       {
@@ -3526,12 +3422,12 @@
         "storageGb": 128,
         "color": "Xám",
         "batteryHealth": 100,
-        "cosmeticCondition": "99KENG",
+        "cosmeticCondition": "KENG",
         "price": 11200000,
         "currency": "VND",
         "stockStatus": "in_stock",
         "addedAt": "2026-10-05",
-        "updatedAt": "2026-11-14",
+        "updatedAt": "2026-11-23",
         "notes": ""
       },
       {
@@ -3626,19 +3522,6 @@
         "notes": ""
       },
       {
-        "id": "p273",
-        "storageGb": 128,
-        "color": "Xám",
-        "batteryHealth": 93,
-        "cosmeticCondition": "KENG",
-        "price": 12100000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-05",
-        "updatedAt": "2026-10-05",
-        "notes": ""
-      },
-      {
         "id": "p270",
         "storageGb": 128,
         "color": "Xám",
@@ -3688,19 +3571,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-10-20",
         "updatedAt": "2026-10-20",
-        "notes": ""
-      },
-      {
-        "id": "p501",
-        "storageGb": 512,
-        "color": "Vàng",
-        "batteryHealth": 80,
-        "cosmeticCondition": "98.5%",
-        "price": 12800000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-11-14",
-        "updatedAt": "2026-11-14",
         "notes": ""
       },
       {
@@ -3774,53 +3644,6 @@
         "stockStatus": "in_stock",
         "addedAt": "2026-10-05",
         "updatedAt": "2026-10-05",
-        "notes": ""
-      }
-    ]
-  },
-  {
-    "model": "iPhone XS",
-    "line": "iPhone X",
-    "slug": "iphone-xs",
-    "image": "/images/models/iphone-xs.svg",
-    "variants": [
-      {
-        "id": "p396",
-        "storageGb": 256,
-        "color": "Xám",
-        "batteryHealth": 75,
-        "cosmeticCondition": "99%",
-        "price": 5000000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-10-29",
-        "notes": ""
-      },
-      {
-        "id": "p397",
-        "storageGb": 256,
-        "color": "Xám",
-        "batteryHealth": 76,
-        "cosmeticCondition": "99%",
-        "price": 5000000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-10-29",
-        "notes": ""
-      },
-      {
-        "id": "p395",
-        "storageGb": 256,
-        "color": "Bạc",
-        "batteryHealth": 76,
-        "cosmeticCondition": "KENG",
-        "price": 5500000,
-        "currency": "VND",
-        "stockStatus": "in_stock",
-        "addedAt": "2026-10-29",
-        "updatedAt": "2026-10-29",
         "notes": ""
       }
     ]
